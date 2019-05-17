@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import com.example.quizapp.DBModel.Category
 import kotlinx.android.synthetic.main.category_item_layout.view.*
 
-class CategoriesAdapter(private val data : List<Category>) :
+class CategoriesAdapter(private val data : List<Category>, val listener: (Category) -> Unit) :
     RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {
 
     class CategoriesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -24,6 +24,10 @@ class CategoriesAdapter(private val data : List<Category>) :
     override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
         val categoryItem = data[position]
         holder.itemView.categoryName.text = categoryItem.name
+
+        /* TODO("Implement picture set")*/
+
+        holder.itemView.setOnClickListener { listener(categoryItem) }
     }
 
 }
