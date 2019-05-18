@@ -5,18 +5,18 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
+import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import com.example.quizapp.DBHelper.DBHelper
 import com.example.quizapp.DBModel.Question
 import com.example.quizapp.R
 import kotlinx.android.synthetic.main.activity_game.*
-import java.lang.Exception
 import java.util.ArrayList
 
 class GameActivity : AppCompatActivity() {
 
-    private var categoryNumber = 0
     private var roundNumber = 0
     private var currQuestionNumber = 0 //actually displayed question id
     private var usedQuestionNumbers = arrayListOf<Int>() //stores question number from previous rounds to prevent repetitions of questions
@@ -24,7 +24,6 @@ class GameActivity : AppCompatActivity() {
     private var areButtonsLocked = false
     private lateinit var  baseBtnColor: Drawable //button color before repainting
     private var  questionList : MutableList<Question>  = ArrayList<Question>()
-
 
     private lateinit var timer: CountDownTimer
     private val timeToAnswer = 30000L
@@ -36,11 +35,13 @@ class GameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
         /** Get from intent choosed category*/
-        val idCategory = intent.getIntExtra("idCategory",1)
+        var idCategory = intent.getIntExtra("idCategory",1)
         val databaseRequest = DBHelper(this)
-        questionList  = databaseRequest.getQuestionBycategory(idCategory)
-
-        categoryNumber = 1
+        if(idCategory !in (1..3)){
+            Toast.makeText(this, "Mamy tylko 3 kategorie póki co ",Toast.LENGTH_SHORT).show()
+            idCategory =1
+        }
+        questionList  = databaseRequest.getQuestionBycategory(idCategory) // na tą chwille tylko 1
 
         baseBtnColor = answer_btn_a.background
 
@@ -56,12 +57,13 @@ class GameActivity : AppCompatActivity() {
         timer.cancel() //stop the timer
 
         val clickedBtn = (v as Button)
-        val correctAnswer = getStringByName("category_${categoryNumber}_question_${currQuestionNumber}_correct_answer")
-        val chosenAnswer = clickedBtn.text.toString()
+        val correctAnswer = questionList[currQuestionNumber].correctAnswer.toString()
+        val chosenAnswer = clickedBtn.text.toString().substring(0,1)
 
         var color = getDrawable(R.color.incorrectAnswerColor) //color for clicked button and answer history btn
         val correctAnswerColor = getDrawable(R.color.correctAnswerColor)
 
+        Log.i("INFOOOO","chosed : $chosenAnswer   && correct: $correctAnswer")
         if(chosenAnswer.compareTo(correctAnswer) == 0){
             color = correctAnswerColor
             moveToNextQuestionAfterDelay(3 * interval)
@@ -74,7 +76,7 @@ class GameActivity : AppCompatActivity() {
     }
 
     private fun handleIncorrectAnswer(){
-        val correctAnswer = getStringByName("category_${categoryNumber}_question_${currQuestionNumber}_correct_answer")
+        val correctAnswer = questionList[currQuestionNumber].correctAnswer.toString()
         val correctAnswerColor = getDrawable(R.color.correctAnswerColor)
         val incorrectAnswerColor = getDrawable(R.color.incorrectAnswerColor)
 
@@ -94,7 +96,7 @@ class GameActivity : AppCompatActivity() {
         Handler().postDelayed({ correctAnswerBtn.background = baseBtnColor }, 3 * interval)
         Handler().postDelayed({ correctAnswerBtn.background = correctAnswerColor }, 4 * interval)
 
-        moveToNextQuestionAfterDelay(7 * interval)
+        moveToNextQuestionAfterDelay(6 * interval)
     }
 
     private fun moveToNextQuestionAfterDelay(delayTime: Long){
@@ -131,41 +133,25 @@ class GameActivity : AppCompatActivity() {
         question_number_txt.text = getString(R.string.question_number, roundNumber.toString())
 
         //generate question number till it is not repeated
-        var randomQuestionNumber = (1 .. countNumberOfQuestionsInCurrentCategory()).random()
+        var randomQuestionNumber = (0 until questionList.size).random()
         while(usedQuestionNumbers.contains(randomQuestionNumber)){
-            randomQuestionNumber = (1 .. countNumberOfQuestionsInCurrentCategory()).random()
+            randomQuestionNumber = (0 until questionList.size).random()
         }
-
+//
         usedQuestionNumbers.add(randomQuestionNumber)
         currQuestionNumber = randomQuestionNumber
 
-        val questionsArray: ArrayList<String> = arrayListOf(
-            getStringByName("category_${categoryNumber}_question_${currQuestionNumber}_answer_1"),
-            getStringByName("category_${categoryNumber}_question_${currQuestionNumber}_answer_2"),
-            getStringByName("category_${categoryNumber}_question_${currQuestionNumber}_answer_3"),
-            getStringByName("category_${categoryNumber}_question_${currQuestionNumber}_answer_4")
-        )
-        questionsArray.shuffle()
+        questionList.shuffle()
 
-        question_txt.text = getStringByName("category_${categoryNumber}_question_$currQuestionNumber")
-        answer_btn_a.text = questionsArray[0]
-        answer_btn_b.text = questionsArray[1]
-        answer_btn_c.text = questionsArray[2]
-        answer_btn_d.text = questionsArray[3]
+//        question_txt.text = getStringByName("category_${categoryNumber}_question_$currQuestionNumber")
+        question_txt.text = questionList[currQuestionNumber].questiontext
+        answer_btn_a.text = questionList[currQuestionNumber].answerA
+        answer_btn_b.text = questionList[currQuestionNumber].answerB
+        answer_btn_c.text = questionList[currQuestionNumber].answerC
+        answer_btn_d.text = questionList[currQuestionNumber].answerD
     }
 
-    private fun countNumberOfQuestionsInCurrentCategory(): Int{
-        var count = 0
-        while(true)
-            try{
-                getStringByName("category_${categoryNumber}_question_${count+1}")
-                count++
-            }catch (e : Exception){
-                break
-            }
 
-        return count
-    }
 
     //question time progress bar controller
     inner class QuestionTimer(millisInFuture: Long, countDownInterval: Long) :

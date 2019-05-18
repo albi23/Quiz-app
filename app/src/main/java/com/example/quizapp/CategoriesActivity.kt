@@ -32,7 +32,6 @@ class CategoriesActivity : AppCompatActivity() {
 
     private fun playGame(category: Category) {
         /* Starts new game at proper category */
-        Toast.makeText(this,"${category.name}",Toast.LENGTH_LONG).show()
 
         val intent = Intent(this,GameActivity::class.java)
         intent.putExtra("idCategory",category.id)
