@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Game.GameActivity">
+        </activity>
         <activity android:name=".Stats.Statistics">
         </activity>
         <activity

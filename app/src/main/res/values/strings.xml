@@ -11,6 +11,89 @@
     <string name="title_activity_categories">Pick up a category</string>
     <string name="action_settings">Settings</string>
 
-    <!--BUTTONS-->
 
+
+    <string name="question_number" formatted="true">Question %s</string>
+
+    <!--question categories-->
+    <string name="category_1">Science</string>
+    <string name="category_2">History</string>
+    <string name="category_3">Sports</string>
+    <string name="category_4">Movies</string>
+    <string name="category_5">Music</string>
+    <string name="category_6">Animals</string>
+    <string name="category_7">Food and drinks</string>
+    <string name="category_8">Geography</string>
+    <string name="category_9">Famous people</string>
+
+    <!--Science-->
+    <string name="category_1_question_1">Which of the following is furthest from the sun?</string>
+    <string name="category_1_question_1_answer_1">Jupiter</string>
+    <string name="category_1_question_1_answer_2">Pluto</string>
+    <string name="category_1_question_1_answer_3">Mercury</string>
+    <string name="category_1_question_1_answer_4">Uranus</string>
+    <string name="category_1_question_1_correct_answer">Pluto</string>
+
+    <string name="category_1_question_2">What is the name of the chemical process that produces a flame?</string>
+    <string name="category_1_question_2_answer_1">Cellular respiration</string>
+    <string name="category_1_question_2_answer_2">Combustion</string>
+    <string name="category_1_question_2_answer_3">Endothermic reaction</string>
+    <string name="category_1_question_2_answer_4">Activation energy</string>
+    <string name="category_1_question_2_correct_answer">Combustion</string>
+
+    <string name="category_1_question_3">How hot is the centre of the Earth?</string>
+    <string name="category_1_question_3_answer_1">4,670°C</string>
+    <string name="category_1_question_3_answer_2">20,000°C</string>
+    <string name="category_1_question_3_answer_3">7,032°C</string>
+    <string name="category_1_question_3_answer_4">5,982°C</string>
+    <string name="category_1_question_3_correct_answer">5,982°C</string>
+
+    <string name="category_1_question_4">Which of these famous scientists developed the polio vaccine?</string>
+    <string name="category_1_question_4_answer_1">Marie Curie</string>
+    <string name="category_1_question_4_answer_2">Albert Einstein</string>
+    <string name="category_1_question_4_answer_3">Brian Cox</string>
+    <string name="category_1_question_4_answer_4">Jonas Salk</string>
+    <string name="category_1_question_4_correct_answer">Jonas Salk</string>
+
+    <string name="category_1_question_5">What does a light-year measure?</string>
+    <string name="category_1_question_5_answer_1">Brightness</string>
+    <string name="category_1_question_5_answer_2">Distance</string>
+    <string name="category_1_question_5_answer_3">Time</string>
+    <string name="category_1_question_5_answer_4">Sound</string>
+    <string name="category_1_question_5_correct_answer">Distance</string>
+
+    <string name="category_1_question_6">What is the most common element in the Universe?</string>
+    <string name="category_1_question_6_answer_1">Helium</string>
+    <string name="category_1_question_6_answer_2">Carbon dioxide</string>
+    <string name="category_1_question_6_answer_3">Oxygen</string>
+    <string name="category_1_question_6_answer_4">Hydrogen</string>
+    <string name="category_1_question_6_correct_answer">Hydrogen</string>
+
+    <string name="category_1_question_7">What do the letters DNA stand for?</string>
+    <string name="category_1_question_7_answer_1">Deoxyribonucleic acid</string>
+    <string name="category_1_question_7_answer_2">Dinucleic anhydride</string>
+    <string name="category_1_question_7_answer_3">Decaoxynitro acetate</string>
+    <string name="category_1_question_7_answer_4">Dimethylribonucleic acid</string>
+    <string name="category_1_question_7_correct_answer">Deoxyribonucleic acid</string>
+
+    <string name="category_1_question_8">Which element takes the form of a liquid at normal room temperature?</string>
+    <string name="category_1_question_8_answer_1">Mercury</string>
+    <string name="category_1_question_8_answer_2">Nitrogen</string>
+    <string name="category_1_question_8_answer_3">Helium</string>
+    <string name="category_1_question_8_answer_4">Oxygen</string>
+    <string name="category_1_question_8_correct_answer">Mercury</string>
+
+    <string name="category_1_question_9">What is the study of insects called?</string>
+    <string name="category_1_question_9_answer_1">Oncology</string>
+    <string name="category_1_question_9_answer_2">Theology</string>
+    <string name="category_1_question_9_answer_3">Petrology</string>
+    <string name="category_1_question_9_answer_4">Entomology</string>
+    <string name="category_1_question_9_correct_answer">Entomology</string>
+
+    <string name="category_1_question_10">What percentage of the Earth\'s surface is covered by water?</string>
+    <string name="category_1_question_10_answer_1">57%</string>
+    <string name="category_1_question_10_answer_2">71%</string>
+    <string name="category_1_question_10_answer_3">49%</string>
+    <string name="category_1_question_10_answer_4">63%</string>
+    <string name="category_1_question_10_correct_answer">71%</string>
 </resources>
