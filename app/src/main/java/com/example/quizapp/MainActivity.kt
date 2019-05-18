@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showStatistics(view: View) {
-
+        val intent =Intent(this,Statistics::class.java)
+        startActivity(intent)
     }
 
     fun changeLanguage(view: View) {
