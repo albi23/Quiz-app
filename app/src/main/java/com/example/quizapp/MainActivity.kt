@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var stat = StatisticPreferences(this) //TEST
-        stat.setLOST(22)
-        stat.setWIN(22)
+        stat.setLOST(7)
+        stat.setWIN(3)
         //tutaj potrzeba zajebistej implementacji :P
     }
 

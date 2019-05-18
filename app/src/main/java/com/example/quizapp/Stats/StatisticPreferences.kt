@@ -2,6 +2,8 @@ package com.example.quizapp.Stats
 
 import android.content.Context
 
+
+//There we stored data to chart for class statistic
 class StatisticPreferences(context: Context) {
 
     private val PREFERENCES_NAME = "SharedPreferences"

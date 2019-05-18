@@ -8,4 +8,7 @@
     <string name="language">Język</string>
     <string name="title_activity_categories">Wybierz kategorię</string>
     <string name="action_settings">Ustawienia</string>
+
+    <string name="backButtons">POWRÓT</string>
+
 </resources>

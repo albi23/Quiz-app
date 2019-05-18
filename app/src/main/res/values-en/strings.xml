@@ -8,4 +8,8 @@
     <string name="language">Language</string>
     <string name="title_activity_categories">Pick up a category</string>
     <string name="action_settings">Settings</string>
+
+    <!--BUTTONS-->
+    <string name="backButtons">BACK</string>
+
 </resources>

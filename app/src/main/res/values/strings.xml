@@ -1,5 +1,8 @@
 <resources>
+
     <string name="app_name">Quiz App</string>
+
+    <!--LANGUAGES-->
     <string name="english">English</string>
     <string name="polish">Polish</string>
     <string name="play">PLAY</string>
@@ -7,4 +10,7 @@
     <string name="language">Language</string>
     <string name="title_activity_categories">Pick up a category</string>
     <string name="action_settings">Settings</string>
+
+    <!--BUTTONS-->
+
 </resources>
