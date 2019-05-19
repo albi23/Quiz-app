@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
 
-    <color name="incorrectAnswerColor">#FF0000</color>
-    <color name="correctAnswerColor">#008000</color>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#03A9F4</color>
+
+    <color name="colorProgress">#FFF176</color>
+    <color name="colorProgressDark">#FDD835</color>
+
+    <color name="wrongAnswerColor">#C5032B</color>
+    <color name="wrongAnswerColorLight">#FA0028</color>
+    <color name="correctAnswerColor">#43A047</color>
+    <color name="correctAnswerColorLight">#A5D6A7</color>
+
+    <color name="colorTextPrimary">#202020</color>
 
 </resources>

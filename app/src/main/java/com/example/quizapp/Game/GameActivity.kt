@@ -22,7 +22,7 @@ class GameActivity : AppCompatActivity() {
     private var usedQuestionNumbers = arrayListOf<Int>() //stores question number from previous rounds to prevent repetitions of questions
 
     private var areButtonsLocked = false
-    private lateinit var  baseBtnColor: Drawable //button color before repainting
+    private lateinit var  baseBtnBlock: Drawable //button color before repainting
     private var  questionList : MutableList<Question>  = ArrayList<Question>()
 
     private lateinit var timer: CountDownTimer
@@ -43,7 +43,7 @@ class GameActivity : AppCompatActivity() {
         }
         questionList  = databaseRequest.getQuestionBycategory(idCategory) // na tą chwille tylko 1
 
-        baseBtnColor = answer_btn_a.background
+        baseBtnBlock = answer_btn_a.background
 
         nextQuestion()
         timer = QuestionTimer(timeToAnswer, timerRefreshFrequency)
@@ -60,25 +60,25 @@ class GameActivity : AppCompatActivity() {
         val correctAnswer = questionList[currQuestionNumber].correctAnswer.toString()
         val chosenAnswer = clickedBtn.text.toString().substring(0,1)
 
-        var color = getDrawable(R.color.incorrectAnswerColor) //color for clicked button and answer history btn
-        val correctAnswerColor = getDrawable(R.color.correctAnswerColor)
+        var incorrectBlock = getDrawable(R.drawable.wrong_answer_block) //color for clicked button and answer history btn
+        val correctBlock = getDrawable(R.drawable.correct_answer_block)
 
         Log.i("INFOOOO","chosen : $chosenAnswer   && correct: $correctAnswer")
         if(chosenAnswer.compareTo(correctAnswer) == 0){
-            color = correctAnswerColor
+            incorrectBlock = correctBlock
             moveToNextQuestionAfterDelay(3 * interval)
-            setAnswerHistoryColor(color)
+            setAnswerHistoryColor(incorrectBlock)
         }else {
             handleIncorrectAnswer()
         }
 
-        clickedBtn.background = color
+        clickedBtn.background = incorrectBlock
     }
 
     private fun handleIncorrectAnswer(){
         val correctAnswer = questionList[currQuestionNumber].correctAnswer.toString()
-        val correctAnswerColor = getDrawable(R.color.correctAnswerColor)
-        val incorrectAnswerColor = getDrawable(R.color.incorrectAnswerColor)
+        val correctAnswerBlock = getDrawable(R.drawable.correct_answer_block)
+        val incorrectAnswerBlock = getDrawable(R.drawable.wrong_answer_block)
 
         var correctAnswerBtn = answer_btn_a
         when (correctAnswer) {
@@ -87,14 +87,14 @@ class GameActivity : AppCompatActivity() {
             answer_btn_d.text.toString() -> correctAnswerBtn = answer_btn_d
         }
 
-        setAnswerHistoryColor(incorrectAnswerColor)
+        setAnswerHistoryColor(incorrectAnswerBlock)
 
         //wrong answer animation
-        correctAnswerBtn.background = correctAnswerColor
-        Handler().postDelayed({ correctAnswerBtn.background = baseBtnColor }, interval)
-        Handler().postDelayed({ correctAnswerBtn.background = correctAnswerColor }, 2 * interval)
-        Handler().postDelayed({ correctAnswerBtn.background = baseBtnColor }, 3 * interval)
-        Handler().postDelayed({ correctAnswerBtn.background = correctAnswerColor }, 4 * interval)
+        correctAnswerBtn.background = correctAnswerBlock
+        Handler().postDelayed({ correctAnswerBtn.background = baseBtnBlock }, interval)
+        Handler().postDelayed({ correctAnswerBtn.background = correctAnswerBlock }, 2 * interval)
+        Handler().postDelayed({ correctAnswerBtn.background = baseBtnBlock }, 3 * interval)
+        Handler().postDelayed({ correctAnswerBtn.background = correctAnswerBlock }, 4 * interval)
 
         moveToNextQuestionAfterDelay(6 * interval)
     }
@@ -124,10 +124,10 @@ class GameActivity : AppCompatActivity() {
         }
 
         //color answer buttons in default color
-        answer_btn_a.background = baseBtnColor
-        answer_btn_b.background = baseBtnColor
-        answer_btn_c.background = baseBtnColor
-        answer_btn_d.background = baseBtnColor
+        answer_btn_a.background = baseBtnBlock
+        answer_btn_b.background = baseBtnBlock
+        answer_btn_c.background = baseBtnBlock
+        answer_btn_d.background = baseBtnBlock
 
         roundNumber++
         question_number_txt.text = getString(R.string.question_number, roundNumber.toString())

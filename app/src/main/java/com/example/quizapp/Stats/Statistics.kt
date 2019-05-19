@@ -3,6 +3,7 @@ package com.example.quizapp.Stats
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.annotation.ColorInt
 import android.view.View
 import com.example.quizapp.R
 import lecho.lib.hellocharts.model.PieChartData
@@ -17,6 +18,9 @@ class Statistics : AppCompatActivity() {
     private lateinit var lost: SliceValue
 
 
+    @ColorInt val winColor = 0xFF43A047
+    @ColorInt val loseColor = 0xFFC5032B
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_statistics)
@@ -29,11 +33,11 @@ class Statistics : AppCompatActivity() {
         pieChartView = findViewById<PieChartView>(R.id.chart)
 
         win = SliceValue().setLabel("Win $WIN") // Add first part
-        win.color = Color.GREEN
+        win.color = winColor.toInt()
         win.value = WIN.toFloat()
 
         lost = SliceValue().setLabel("Lost $LOST") // fill second part
-        lost.color = Color.RED
+        lost.color = loseColor.toInt()
         lost.value = LOST.toFloat()
 
 

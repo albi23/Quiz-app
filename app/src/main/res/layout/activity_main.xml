@@ -5,32 +5,37 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:background="@color/colorTextPrimary">
 
     <Button
             android:text="@string/play"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/playButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/playButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:onClick="playNewGame" android:background="@drawable/color_block"
+            app:layout_constraintHorizontal_bias="1.0"
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:onClick="playNewGame"/>
+            app:layout_constraintBottom_toTopOf="@+id/statisticsButton"
+            android:textSize="36sp" android:fontFamily="sans-serif"/>
     <Button
             android:text="@string/statistics"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" android:id="@+id/statisticsButton"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/playButton"
-            android:onClick="showStatistics"/>
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:onClick="showStatistics" android:background="@drawable/color_block"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/languageButton"
+    />
     <Button
             android:text="@string/language"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" android:id="@+id/languageButton"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/statisticsButton"
-            android:onClick="changeLanguage"/>
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:onClick="changeLanguage" style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/color_block"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

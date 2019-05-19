@@ -5,7 +5,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:orientation="vertical"
-             tools:context=".Game.GameActivity">
+             tools:context=".Game.GameActivity" android:background="@color/colorTextPrimary">
 
     <TextView
             android:id="@+id/question_number_txt"
@@ -13,7 +13,8 @@
             android:layout_height="0dp"
             android:layout_weight="8"
             android:gravity="center"
-            android:text="TextView" />
+            android:text="TextView" android:background="@drawable/toolbar_background" android:textAllCaps="true"
+            android:textSize="24sp" android:fontFamily="sans-serif" android:textColor="@color/colorTextPrimary"/>
 
     <TableRow
             android:layout_width="match_parent"
@@ -27,7 +28,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:enabled="false" />
+                android:enabled="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="5dp"/>
 
         <Button
                 android:id="@+id/second_question_result_btn"
@@ -35,7 +40,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:enabled="false" />
+                android:enabled="false"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="5dp"/>
 
         <Button
                 android:id="@+id/third_question_result_btn"
@@ -43,7 +52,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:enabled="false" />
+                android:enabled="false"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="5dp"/>
 
         <Button
                 android:id="@+id/fourth_question_result_btn"
@@ -51,7 +64,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:enabled="false" />
+                android:enabled="false"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginBottom="5dp"/>
 
         <Button
                 android:id="@+id/fifth_question_result_btn"
@@ -59,7 +76,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:enabled="false" />
+                android:enabled="false"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
 
     </TableRow>
 
@@ -68,25 +89,26 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="50"
-            android:gravity="center" />
+            android:gravity="center" android:background="@drawable/white_block"/>
 
     <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="4" />
+            android:layout_weight="1"/>
 
     <ProgressBar
             android:id="@+id/remaining_time_bar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="4"
-            android:max="30000" />
+            android:layout_weight="6"
+            android:max="30000" android:indeterminate="false"
+            android:progressDrawable="@drawable/gradient_progress"/>
 
     <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="4" />
+            android:layout_weight="1"/>
 
     <Button
             android:id="@+id/answer_btn_a"
@@ -94,7 +116,9 @@
             android:layout_height="0dp"
             android:layout_weight="8"
             android:onClick="onAnswerChoose"
-            android:text="Button" />
+            android:text="Button" android:background="@drawable/color_block"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"/>
 
     <Button
             android:id="@+id/answer_btn_b"
@@ -102,7 +126,9 @@
             android:layout_height="0dp"
             android:layout_weight="8"
             android:onClick="onAnswerChoose"
-            android:text="Button" />
+            android:text="Button" android:background="@drawable/color_block"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"/>
 
     <Button
             android:id="@+id/answer_btn_c"
@@ -110,7 +136,9 @@
             android:layout_height="0dp"
             android:layout_weight="8"
             android:onClick="onAnswerChoose"
-            android:text="Button" />
+            android:text="Button" android:background="@drawable/color_block"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"/>
 
     <Button
             android:id="@+id/answer_btn_d"
@@ -118,11 +146,13 @@
             android:layout_height="0dp"
             android:layout_weight="8"
             android:onClick="onAnswerChoose"
-            android:text="Button" />
+            android:text="Button" android:background="@drawable/color_block"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"/>
 
     <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="4" />
+            android:layout_weight="1"/>
 
 </TableLayout>

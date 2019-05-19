@@ -5,7 +5,7 @@
     <!--LANGUAGES-->
     <string name="english">English</string>
     <string name="polish">Polish</string>
-    <string name="play">PLAY</string>
+    <string name="play">Tap to play</string>
     <string name="statistics">Statistics</string>
     <string name="language">Language</string>
     <string name="title_activity_categories">Pick up a category</string>

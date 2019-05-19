@@ -7,4 +7,5 @@
         tools:showIn="@layout/activity_categories"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CategoriesActivity" android:id="@+id/categoriesRecyclerView"/>
+        tools:context=".CategoriesActivity" android:id="@+id/categoriesRecyclerView"
+        android:layout_marginTop="2.5dp"/>
