@@ -34,7 +34,7 @@ class GameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
 
-        /** Get from intent choosed category*/
+        /** Get from intent chosen category*/
         var idCategory = intent.getIntExtra("idCategory",1)
         val databaseRequest = DBHelper(this)
         if(idCategory !in (1..3)){
@@ -63,7 +63,7 @@ class GameActivity : AppCompatActivity() {
         var color = getDrawable(R.color.incorrectAnswerColor) //color for clicked button and answer history btn
         val correctAnswerColor = getDrawable(R.color.correctAnswerColor)
 
-        Log.i("INFOOOO","chosed : $chosenAnswer   && correct: $correctAnswer")
+        Log.i("INFOOOO","chosen : $chosenAnswer   && correct: $correctAnswer")
         if(chosenAnswer.compareTo(correctAnswer) == 0){
             color = correctAnswerColor
             moveToNextQuestionAfterDelay(3 * interval)
@@ -133,15 +133,13 @@ class GameActivity : AppCompatActivity() {
         question_number_txt.text = getString(R.string.question_number, roundNumber.toString())
 
         //generate question number till it is not repeated
-        var randomQuestionNumber = (0 until questionList.size).random()
+        var randomQuestionNumber = (0 until questionList.size - 1).random()
         while(usedQuestionNumbers.contains(randomQuestionNumber)){
-            randomQuestionNumber = (0 until questionList.size).random()
+            randomQuestionNumber = (0 until questionList.size - 1).random()
         }
 //
         usedQuestionNumbers.add(randomQuestionNumber)
         currQuestionNumber = randomQuestionNumber
-
-        questionList.shuffle()
 
 //        question_txt.text = getStringByName("category_${categoryNumber}_question_$currQuestionNumber")
         question_txt.text = questionList[currQuestionNumber].questiontext
