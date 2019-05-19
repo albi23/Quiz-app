@@ -25,8 +25,6 @@ class CategoriesAdapter(private val data : List<Category>, val listener: (Catego
         val categoryItem = data[position]
         holder.itemView.categoryName.text = categoryItem.name
 
-        /* TODO("Implement picture set")*/
-
         holder.itemView.setOnClickListener { listener(categoryItem) }
     }
 
