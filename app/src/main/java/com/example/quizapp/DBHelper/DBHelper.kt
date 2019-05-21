@@ -10,8 +10,8 @@ class DBHelper (context : Context): SQLiteAssetHelper(context,DB_NAME,null,DB_VE
 
     companion object{
         private var instance : DBHelper ?= null
-        private  val DB_NAME = "QuizDB.db";
-        private val DB_VER = 1;
+        private  val DB_NAME = "QuizDB.db"
+        private val DB_VER = 2
 
         @Synchronized
         fun getInstance(context: Context):DBHelper{

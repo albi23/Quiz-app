@@ -30,7 +30,7 @@ class GameActivity : AppCompatActivity() {
     private val timeToAnswer = 30000L
     private val timerRefreshFrequency  = 40L
     private val interval = 1000L //one animation time interval in milliseconds
-    private  val pref : StatisticPreferences =  StatisticPreferences(this)
+//    private  val pref : StatisticPreferences =  StatisticPreferences(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,8 +39,8 @@ class GameActivity : AppCompatActivity() {
         /** Get from intent chosen category*/
         var idCategory = intent.getIntExtra("idCategory",1)
         val databaseRequest = DBHelper(this)
-        if(idCategory !in (1..3)){
-            Toast.makeText(this, "Mamy tylko 3 kategorie póki co ",Toast.LENGTH_SHORT).show()
+        if(idCategory !in (1..5)){
+            Toast.makeText(this, "Mamy tylko 5 kategorie póki co ",Toast.LENGTH_SHORT).show()
             idCategory =1
         }
         questionList  = databaseRequest.getQuestionBycategory(idCategory)
@@ -86,9 +86,9 @@ class GameActivity : AppCompatActivity() {
 
         var correctAnswerBtn = answer_btn_a
         when (correctAnswer) {
-            answer_btn_b.text.toString() -> correctAnswerBtn = answer_btn_b
-            answer_btn_c.text.toString() -> correctAnswerBtn = answer_btn_c
-            answer_btn_d.text.toString() -> correctAnswerBtn = answer_btn_d
+            answer_btn_b.text.toString().substring(0,1) -> correctAnswerBtn = answer_btn_b
+            answer_btn_c.text.toString().substring(0,1) -> correctAnswerBtn = answer_btn_c
+            answer_btn_d.text.toString().substring(0,1) -> correctAnswerBtn = answer_btn_d
         }
 
         setAnswerHistoryColor(incorrectAnswerBlock)
