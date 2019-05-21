@@ -61,4 +61,8 @@ class ResultActivity : AppCompatActivity() {
     private fun onFinish(){
         finish()
     }
+
+    fun shareOnFacebook(){
+        // trzeba zaimplementować
+    }
 }

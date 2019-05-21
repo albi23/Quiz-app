@@ -43,5 +43,9 @@ dependencies {
     implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
     implementation 'com.github.sabujak-sabujak:RoundedButton:v0.1.1'
     implementation 'com.github.bumptech.glide:glide:4.2.0'
+    implementation "com.github.nikartm:fit-button:1.2.1"
+    implementation 'com.facebook.android:facebook-share:[5,6)'
+
+
 
 }

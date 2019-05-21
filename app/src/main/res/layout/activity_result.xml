@@ -11,111 +11,158 @@
         android:background="@color/colorTextPrimary" android:id="@+id/category_name">
 
 
-        <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay"
-                android:background="@drawable/toolbar_background"
-        />
-        <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/category_text"
-                android:textSize="36sp"
-                android:background="#FFC107"
-                android:minHeight="80sp"
-                android:textColor="@android:color/white"/>
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@drawable/toolbar_background"
+    />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_text"
+            android:textSize="36sp"
+            android:background="#FFC107"
+            android:minHeight="80sp"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/result_text"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:layout_marginTop="10.5dp"
+            android:text="You Did Well"
+            android:textColor="#4CAF50"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:minHeight="150dp"
+            android:maxHeight="150dp"
+            android:layout_marginTop="15.5dp"
+            app:srcCompat="@drawable/cup_silver"
+            android:id="@+id/image_result"
+            android:scaleType="fitCenter"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
         <TextView
+                android:text="Correct "
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/result_text"
+                android:layout_height="match_parent"
+                android:id="@+id/correct_info"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
                 android:textAlignment="center"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Wrong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView3"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:textSize="50sp"
-                android:layout_marginTop="10.5dp"
-                android:text="You Did Well"
-                android:textColor="#4CAF50"/>
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:minHeight="150dp"
-                android:maxHeight="150dp"
-                android:layout_marginTop="15.5dp"
-                app:srcCompat="@drawable/cup_silver"
-                android:id="@+id/image_result"
-                android:scaleType="fitCenter"/>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:textAlignment="center"/>
+    </LinearLayout>
 
-                <TextView
-                        android:text="Correct "
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/correct_info"
-                        android:textSize="30sp"
-                        android:layout_weight="1"
-                        android:textColor="#FFFFFF"
-                        android:textAlignment="center"
-                        android:textStyle="bold"/>
-                <TextView
-                        android:text="Wrong"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView3"
-                        android:layout_weight="1"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:textAlignment="center"/>
-        </LinearLayout>
+    <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <LinearLayout
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal"
+        <TextView
+                android:text="3 "
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                        android:text="3 "
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/correct_result"
-                        android:textSize="30sp"
-                        android:layout_weight="1"
-                        android:textColor="@color/correctAnswerColor"
-                        android:textAlignment="center"
-                        android:textStyle="bold"/>
-                <TextView
-                        android:text="3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/wrong_result"
-                        android:layout_weight="1"
-                        android:textColor="@color/wrongAnswerColor"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:textAlignment="center"/>
-        </LinearLayout>
-
-        <ProgressBar
-                android:layout_marginTop="10dp"
-                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_height="match_parent"
+                android:id="@+id/correct_result"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:textColor="@color/correctAnswerColor"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/progressBar"
-                android:max="5"
-                android:progress="3"
-                android:angle="45"
-                android:radius="10dp"
-                android:scaleY="6"
-                android:secondaryProgress="5"
-                android:progressTint="@color/correctAnswerColor"
-                android:secondaryProgressTint="@color/wrongAnswerColorLight"
-        />
+                android:layout_height="match_parent"
+                android:id="@+id/wrong_result"
+                android:layout_weight="1"
+                android:textColor="@color/wrongAnswerColor"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+    </LinearLayout>
+
+    <ProgressBar
+            android:layout_marginTop="10dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:max="5"
+            android:progress="3"
+            android:angle="45"
+            android:radius="10dp"
+            android:scaleY="6"
+            android:secondaryProgress="5"
+            android:progressTint="@color/correctAnswerColor"
+            android:secondaryProgressTint="@color/wrongAnswerColorLight"
+    />
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    <Button
+            android:layout_gravity="bottom"
+            android:background="#3B5998"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/fb"
+            android:textAllCaps="false"
+            android:text="Share on Facebook"
+            android:drawableStart="@drawable/ic_thumb_up"
+            android:drawableTint="@color/cardview_light_background"
+            android:paddingHorizontal="20dp"
+            android:enabled="true"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_weight="0"
+
+    />
+
+    <!--<com.github.nikartm.button.FitButton-->
+    <!--android:id="@+id/fbtn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="58dp"-->
+    <!--android:layout_margin="32dp"-->
+    <!--android:enabled="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--app:fb_cornerRadius="2dp"-->
+    <!--app:fb_shape="rectangle"-->
+    <!--app:fb_divColor="#fff"-->
+    <!--app:fb_divWidth="1dp"-->
+    <!--app:fb_divHeight="40dp"-->
+    <!--app:fb_rippleColor="#FBE9E7"-->
+    <!--app:fb_iconWidth="28dp"-->
+    <!--app:fb_iconHeight="28dp"-->
+    <!--app:fb_iconPosition="left"-->
+    <!--app:fb_iconMarginStart="20dp"-->
+    <!--app:fb_iconMarginEnd="16dp"-->
+    <!--app:fb_icon="@drawable/ic_thumb_up"-->
+    <!--app:fb_iconColor="#FFF"-->
+    <!--app:fb_textPaddingStart="16dp"-->
+    <!--app:fb_textColor="#FFF"-->
+    <!--app:fb_text="Like Me"-->
+    <!--app:fb_backgroundColor="#FF7043"/>-->
 
 
 </LinearLayout>
