@@ -27,45 +27,45 @@ class Statistics : AppCompatActivity() {
     }
 
 
-    fun getDataToGraph():ArrayList<PieChartData>{
+    private fun getDataToGraph():ArrayList<PieChartData>{
 
         val chartData = ArrayList<PieChartData>()
         val arrayCategories = DBHelper.getInstance(this).allCategories
         val pref = StatisticPreferences(this)
         var pieChartData : PieChartData
-        var WIN : Int
-        var LOST : Int
+        var correct : Int
+        var wrong : Int
 
 
         for ( i in 0 ..  arrayCategories.size - 1) {
 
-            WIN = pref.getWIN(arrayCategories[i].id)
-            LOST = pref.getLOST(arrayCategories[i].id)
+            correct = pref.getCorrect(arrayCategories[i].id)
+            wrong = pref.getWrong(arrayCategories[i].id)
 
 
              pieChartData = PieChartData(
                 arrayListOf(
            SliceValue().
-                setLabel("Wrong $LOST")
+                setLabel("Wrong $wrong")
                 .setColor(loseColor.toInt())
-                .setValue(LOST.toFloat()),
+                .setValue(wrong.toFloat()),
 
            SliceValue().
-                setLabel("Correct $WIN")
+                setLabel("Correct $correct")
                 .setColor(winColor.toInt())
-                .setValue(WIN.toFloat())
+                .setValue(correct.toFloat())
             ))
 
-            if(WIN+LOST == 0 ){
-                pieChartData.values[0].setValue(50f)
-                pieChartData.values[1].setValue(50f)
+            if(correct+wrong == 0 ){
+                pieChartData.values[0].value = 50f
+                pieChartData.values[1].value = 50f
             }
 
             pieChartData.setHasLabels(true).valueLabelTextSize = 14
-            pieChartData.setHasCenterCircle(true).setCenterText1(arrayCategories[i].name)
-            pieChartData.isValueLabelBackgroundEnabled = true;
+            pieChartData.setHasCenterCircle(true).centerText1 = arrayCategories[i].name
+            pieChartData.isValueLabelBackgroundEnabled = true
 
-            chartData.add(pieChartData);
+            chartData.add(pieChartData)
 
         }
 
@@ -74,27 +74,7 @@ class Statistics : AppCompatActivity() {
     }
 
 
-
-    //If data was changed, we need to update % in chart_item
-//    private fun updatePercentageOfChart(pieChartList : ArrayList<SliceValue>) {
-//
-//        val win = pieChartList[0].value
-//        val lost = pieChartList[1].value
-//        // total numbers of games/question whatever
-//        val totalGames : Int = (win + lost).toInt()
-//        if (totalGames != 0) {
-//            pieChartList[0].value = win / totalGames
-//            pieChartList[1].value = lost / totalGames
-//        } else {
-//            /*no data =  50 % in both correct and wrong */
-//            pieChartList[0].value = 50f
-//            pieChartList[1].value = 50f
-//        }
-//
-//    }
-
-
-    fun onClickBack(view: View){
+    fun onClickBack(view: View){ // jeszcze nie wiem jak ma to wyglądać
 
         finish()
     }

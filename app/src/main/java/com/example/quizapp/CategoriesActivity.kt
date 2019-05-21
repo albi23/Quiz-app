@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
-import android.widget.Toast
 import com.example.quizapp.DBHelper.DBHelper
 import com.example.quizapp.DBModel.Category
 import com.example.quizapp.Game.GameActivity
@@ -35,6 +33,7 @@ class CategoriesActivity : AppCompatActivity() {
 
         val intent = Intent(this,GameActivity::class.java)
         intent.putExtra("idCategory",category.id)
+        intent.putExtra("nameCategory",category.name)
         startActivity(intent)
 
     }

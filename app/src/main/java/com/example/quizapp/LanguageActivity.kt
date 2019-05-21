@@ -16,7 +16,7 @@ class LanguageActivity : AppCompatActivity() {
 
 //        val linearLayout = findViewById<LinearLayout>(R.id.linear)
 //        val imageView = imageView2 // FAZA TESTÓW
-        Glide.with(this).load("https://github.com/albi23/TestPhoto/blob/master/photos/rihana.png?raw=true").into(imageView2)
+//        Glide.with(this).load("https://github.com/albi23/TestPhoto/blob/master/photos/rihana.png?raw=true").into(imageView2)
 //        linearLayout.addView(imageView)
     }
 

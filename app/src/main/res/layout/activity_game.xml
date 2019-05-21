@@ -89,7 +89,10 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="50"
-            android:gravity="center" android:background="@drawable/white_block"/>
+            android:gravity="center"
+            android:background="@drawable/white_block" android:textSize="19sp"
+            android:text="testowe pytanie o długiej treści by sprawdzić jak działa wygląda okej "
+            android:textStyle="bold" android:textColor="#D70F0E0E"/>
 
     <Space
             android:layout_width="match_parent"
@@ -102,7 +105,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="6"
-            android:max="30000" android:indeterminate="false"
+            android:max="30000"
+            android:indeterminate="false"
             android:progressDrawable="@drawable/gradient_progress"/>
 
     <Space

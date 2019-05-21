@@ -11,6 +11,7 @@
     <string name="title_activity_categories">Pick up a category</string>
     <string name="action_settings">Settings</string>
 
+    <string name="result_title">Result of the game </string>
 
 
     <string name="question_number" formatted="true">Question %s</string>

@@ -1,18 +1,17 @@
 package com.example.quizapp.Game
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.example.quizapp.DBHelper.DBHelper
 import com.example.quizapp.DBModel.Question
 import com.example.quizapp.R
-import com.example.quizapp.Stats.StatisticPreferences
 import kotlinx.android.synthetic.main.activity_game.*
 import java.util.ArrayList
 
@@ -21,16 +20,14 @@ class GameActivity : AppCompatActivity() {
     private var roundNumber = 0
     private var currQuestionNumber = 0 //actually displayed question id
     private var usedQuestionNumbers = arrayListOf<Int>() //stores question number from previous rounds to prevent repetitions of questions
-
+    private var  questionList : MutableList<Question>  = ArrayList<Question>()
     private var areButtonsLocked = false
     private lateinit var  baseBtnBlock: Drawable //button color before repainting
-    private var  questionList : MutableList<Question>  = ArrayList<Question>()
-
     private lateinit var timer: CountDownTimer
     private val timeToAnswer = 30000L
     private val timerRefreshFrequency  = 40L
     private val interval = 1000L //one animation time interval in milliseconds
-//    private  val pref : StatisticPreferences =  StatisticPreferences(this)
+    private var counterCorrectAnswer = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,8 +63,8 @@ class GameActivity : AppCompatActivity() {
         var incorrectBlock = getDrawable(R.drawable.wrong_answer_block) //color for clicked button and answer history btn
         val correctBlock = getDrawable(R.drawable.correct_answer_block)
 
-        Log.i("INFOOOO","chosen : $chosenAnswer   && correct: $correctAnswer")
         if(chosenAnswer.compareTo(correctAnswer) == 0){
+            counterCorrectAnswer++
             incorrectBlock = correctBlock
             moveToNextQuestionAfterDelay(3 * interval)
             setAnswerHistoryColor(incorrectBlock)
@@ -122,9 +119,8 @@ class GameActivity : AppCompatActivity() {
     }
 
     private fun nextQuestion(){
-        if(roundNumber == 5){
-            finish() //prevents moving back to the game from results activity
-            return
+        if(roundNumber == 5){ ///popraw to !
+            showResults()
         }
 
         //color answer buttons in default color
@@ -172,5 +168,17 @@ class GameActivity : AppCompatActivity() {
 
     private fun getStringByName(resourceName : String): String{
         return resources.getString(resources.getIdentifier(resourceName, "string", packageName))
+    }
+
+    private fun showResults(){
+
+        val newIntent =  Intent(this, ResultActivity::class.java)
+        newIntent.putExtra("correctAnswer",counterCorrectAnswer)
+        newIntent.putExtra("nameCategory",intent.getStringExtra("nameCategory"))
+        newIntent.putExtra("idCategory",intent.getIntExtra("idCategory",1))
+
+        startActivity(newIntent)
+        finish()
+
     }
 }
