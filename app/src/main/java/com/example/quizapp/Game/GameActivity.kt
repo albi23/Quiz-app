@@ -12,6 +12,7 @@ import android.widget.Toast
 import com.example.quizapp.DBHelper.DBHelper
 import com.example.quizapp.DBModel.Question
 import com.example.quizapp.R
+import com.example.quizapp.Stats.StatisticPreferences
 import kotlinx.android.synthetic.main.activity_game.*
 import java.util.ArrayList
 
@@ -29,6 +30,7 @@ class GameActivity : AppCompatActivity() {
     private val timeToAnswer = 30000L
     private val timerRefreshFrequency  = 40L
     private val interval = 1000L //one animation time interval in milliseconds
+    private  val pref : StatisticPreferences =  StatisticPreferences(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,9 +43,10 @@ class GameActivity : AppCompatActivity() {
             Toast.makeText(this, "Mamy tylko 3 kategorie póki co ",Toast.LENGTH_SHORT).show()
             idCategory =1
         }
-        questionList  = databaseRequest.getQuestionBycategory(idCategory) // na tą chwille tylko 1
+        questionList  = databaseRequest.getQuestionBycategory(idCategory)
 
         baseBtnBlock = answer_btn_a.background
+
 
         nextQuestion()
         timer = QuestionTimer(timeToAnswer, timerRefreshFrequency)
@@ -68,6 +71,7 @@ class GameActivity : AppCompatActivity() {
             incorrectBlock = correctBlock
             moveToNextQuestionAfterDelay(3 * interval)
             setAnswerHistoryColor(incorrectBlock)
+
         }else {
             handleIncorrectAnswer()
         }

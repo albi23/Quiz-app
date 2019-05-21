@@ -1,6 +1,7 @@
 package com.example.quizapp.DBHelper
 
 import android.content.Context
+import android.util.Log
 import com.example.quizapp.DBModel.Category
 import com.example.quizapp.DBModel.Question
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper

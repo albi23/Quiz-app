@@ -14,9 +14,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var stat = StatisticPreferences(this) //TEST
-        stat.setLOST(7)
-        stat.setWIN(3)
-        //tutaj potrzeba zajebistej implementacji :P
+        stat.setLOST(7,1)
+        stat.setWIN(3,1)
+
+        stat.setLOST(12,5)
+        stat.setWIN(13,5)
+
+        stat.setLOST(35,2)
+        stat.setWIN(7,2)
+
+        stat.setLOST(18,3)
+        stat.setWIN(12,3)
+
+        stat.setWIN(2,4)
+        stat.setLOST(56,4)
     }
 
     fun playNewGame(view: View) {

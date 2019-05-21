@@ -27,7 +27,7 @@ class CategoriesActivity : AppCompatActivity() {
         categories = database.allCategories
 
         categoriesRecyclerView.layoutManager = LinearLayoutManager(this)
-        categoriesRecyclerView.adapter = CategoriesAdapter(categories) { playGame(it) }
+        categoriesRecyclerView.adapter = CategoriesAdapter(categories,this) { playGame(it) }
     }
 
     private fun playGame(category: Category) {

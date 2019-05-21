@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,8 @@ import android.view.ViewGroup
 import com.example.quizapp.DBModel.Category
 import kotlinx.android.synthetic.main.category_item_layout.view.*
 
-class CategoriesAdapter(private val data : List<Category>, val listener: (Category) -> Unit) :
+
+class CategoriesAdapter(private val data : List<Category>, val conttext : Context, val listener: (Category) -> Unit) :
     RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder>() {
 
     class CategoriesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -25,6 +27,8 @@ class CategoriesAdapter(private val data : List<Category>, val listener: (Catego
         val categoryItem = data[position]
         holder.itemView.categoryName.text = categoryItem.name
 
+        val id = conttext.resources.getIdentifier(categoryItem.image, "drawable", conttext.packageName)
+        holder.itemView.categoryImage.setImageResource(id)
         holder.itemView.setOnClickListener { listener(categoryItem) }
     }
 
