@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         tools:context=".Stats.Statistics"
-        android:background="@drawable/app_background">
+        android:id="@+id/coordinatorLayout" android:background="@color/colorAppDark">
 
     <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
@@ -51,7 +51,6 @@
             android:background="@drawable/wrong_answer_block"
             tools:layout_editor_absoluteX="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_anchorGravity="top|center"
-            app:layout_anchor="@+id/app_bar"/>
+            android:layout_gravity="bottom" android:onClick="onClickBack"/>
 
 </android.support.design.widget.CoordinatorLayout>

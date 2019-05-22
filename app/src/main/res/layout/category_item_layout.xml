@@ -5,7 +5,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:gravity="center"
-              android:background="@drawable/color_block"
+              android:background="@drawable/blue_block"
               android:layout_marginRight="5dp"
               android:layout_marginLeft="5dp"
               android:layout_marginTop="2.5dp"
@@ -22,7 +22,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginBottom="8dp"
-            app:srcCompat="@drawable/english"
+            app:srcCompat="@drawable/animals"
             android:layout_weight="1"
             android:adjustViewBounds="true"/>
     <TextView
@@ -35,6 +35,6 @@
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:textSize="36sp"
-            android:textColor="@color/colorTextPrimary"
+            android:textColor="@color/colorAppDark"
             android:textAllCaps="true"/>
 </LinearLayout>

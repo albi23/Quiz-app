@@ -15,12 +15,18 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorPrimary">@color/colorAppDark</item>
     </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
         <item name="buttonGradientStartColor">@color/colorPrimary</item>
         <item name="buttonGradientEndColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ResultProgressBar" parent="Widget.MaterialProgressBar.ProgressBar">
+        <item name="android:progressBackgroundTint">@color/correctAnswerColor</item>
+        <item name="android:secondaryProgressTint">@color/wrongAnswerColor</item>
+        <item name="android:background">@drawable/result_progress</item>
     </style>
     <!--Turn on full screen in app without title bar -->
 

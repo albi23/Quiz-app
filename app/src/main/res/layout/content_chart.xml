@@ -9,4 +9,4 @@
         android:layout_height="match_parent"
         tools:context=".Stats.Statistics"
         android:id="@+id/chartRecyclerView"
-        android:layout_marginTop="0.5dp"/>
+        android:background="@drawable/blue_block" android:layout_margin="8dp"/>

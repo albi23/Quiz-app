@@ -4,7 +4,6 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.quizapp.Stats.StatisticPreferences
 import com.example.quizapp.Stats.Statistics
 
 class MainActivity : AppCompatActivity() {
@@ -21,12 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     fun showStatistics(view: View) {
         val intent = Intent(this, Statistics::class.java)
-
-        startActivity(intent)
-    }
-
-    fun changeLanguage(view: View) {
-        val intent = Intent(this, LanguageActivity::class.java)
         startActivity(intent)
     }
 }

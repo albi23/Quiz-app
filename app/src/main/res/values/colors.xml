@@ -9,10 +9,12 @@
     <color name="colorProgressDark">#FDD835</color>
 
     <color name="wrongAnswerColor">#C5032B</color>
-    <color name="wrongAnswerColorLight">#FA0028</color>
+    <color name="wrongAnswerColorLight">#FF274A</color>
     <color name="correctAnswerColor">#43A047</color>
     <color name="correctAnswerColorLight">#A5D6A7</color>
 
-    <color name="colorTextPrimary">#202020</color>
+    <color name="colorAppDark">#202020</color>
+
+    <color name="colorFacebook">#3B5998</color>
 
 </resources>
