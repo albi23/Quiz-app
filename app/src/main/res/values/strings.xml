@@ -14,6 +14,11 @@
     <string name="result_title">Result of the game </string>
 
 
+    <!-- IMPORTANT ID FROM FACEBOOK-->
+    <string name="facebook_app_id">684088502026030</string>
+    <string name="fb_login_protocol_scheme">fb684088502026030</string>
+
+
     <string name="question_number" formatted="true">Question %s</string>
 
     <!--question categories-->

@@ -1,13 +1,19 @@
 package com.example.quizapp.Game
 
-import android.support.v7.app.AppCompatActivity
+import android.app.AlertDialog
+import android.net.Uri
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.LinearLayout
 import com.example.quizapp.R
 import com.example.quizapp.Stats.StatisticPreferences
+import com.facebook.share.model.ShareLinkContent
+import com.facebook.share.widget.ShareDialog
 import kotlinx.android.synthetic.main.activity_categories.toolbar
 import kotlinx.android.synthetic.main.activity_result.*
-
 
 
 class ResultActivity : AppCompatActivity() {
@@ -62,7 +68,43 @@ class ResultActivity : AppCompatActivity() {
         finish()
     }
 
-    fun shareOnFacebook(){
-        // trzeba zaimplementować
+    /***
+     * Do rozbudowy
+     */
+    fun postStatusToFacebook(view: View) {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Share Link")
+
+        val input = EditText(this@ResultActivity)
+        val lp = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.MATCH_PARENT,
+            LinearLayout.LayoutParams.MATCH_PARENT)
+        input.layoutParams = lp
+        builder.setView(input)
+
+        builder.setPositiveButton(android.R.string.ok) { dialog, p1 ->
+            val link = input.text
+            var isValid = true
+            if (link.isBlank()) {
+                isValid = false
+            }
+
+            if (isValid) {
+
+                val content = ShareLinkContent.Builder()
+                    .setContentUrl(Uri.parse("https://github.com/albi23/Quiz-app")) // testowe dane
+                    .build()
+                ShareDialog.show(this, content)
+            }
+
+            dialog.dismiss()
+        }
+
+        builder.setNegativeButton(android.R.string.cancel) { dialog, p1 ->
+            dialog.cancel()
+        }
+
+        builder.show()
     }
+
 }
