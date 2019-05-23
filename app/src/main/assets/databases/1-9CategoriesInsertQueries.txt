@@ -1,0 +1,304 @@
+INSERT INTO Question VALUES (NULL, "Which of the following is furthest from the sun?", NULL, "A. Jupiter", "B. Pluto", "C. Mercury", "D. Uranus", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "What is the name of the chemical process that produces a flame?", NULL, "A. Cellular respiration", "B. Combustion", "C. Endothermic reaction", "D. Activation energy", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "How hot is the centre of the Earth?", NULL, "A. 4,670°C", "B. 20,000°C", "C. 7,032°C", "D. 5,982°C", "D", 0, 1);
+INSERT INTO Question VALUES (NULL, "Which of these famous scientists developed the polio vaccine?", NULL, "A. Marie Curie", "B. Albert Einstein", "C. Brian Cox", "D. Jonas Salk", "D", 0, 1);
+INSERT INTO Question VALUES (NULL, "What does a light-year measure?", NULL, "A. Brightness", "B. Distance", "C. Time", "D. Sound", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "What is the most common element in the Universe?", NULL, "A. Helium", "B. Carbon dioxide", "C. Oxygen", "D. Hydrogen", "D", 0, 1);
+INSERT INTO Question VALUES (NULL, "What do the letters DNA stand for?", NULL, "A. Deoxyribonucleic acid", "B. Dinucleic anhydride", "C. Decaoxynitro acetate", "D. Dimethylribonucleic acid", "D", 0, 1);
+INSERT INTO Question VALUES (NULL, "Which element takes the form of a liquid at normal room temperature?", NULL, "A. Mercury", "B. Nitrogen", "C. Helium", "D. Oxygen", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "What is the study of insects called?", NULL, "A. Oncology", "B. Theology", "C. Petrology", "D. Entomology", "D", 0, 1);
+INSERT INTO Question VALUES (NULL, "What percentage of the Earth's surface is covered by water?", NULL, "A. 57%", "B. 71%", "C. 49%", "D. 63%", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "What is the speed of light?", NULL, "A. 299,338 kilometers per second", "B. infinite", "C. 1.86 million miles per second", "D. 112,300 kilometers per second", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "When did scientists first discover that light had a specific, measureable speed?", NULL, "A. 17th century", "B. 18th century", "C. 19th century", "D. 16th century", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "What do you call the building blocks that make up protons and neutrons?", NULL, "A. squarks", "B. quarks", "C. quicks", "D. electrons", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "What technology won the first Nobel Prize in physics in 1901?", NULL, "A. X-rays", "B. radio", "C. nuclear fusion", "D. combistion engine", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "Which of the following is NOT one of the four fundamental forces in physics?", NULL, "A. gravitational", "B. electromagnetism", "C. acceleration", "D. strong interaction", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "What technological innovation is Guglielmo Marconi best known for?", NULL, "A. radio", "B. television", "C. telephone", "D. combustion engine", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "Where can you find the world's largest particle accelerator?", NULL, "A. Switzerland", "B. United States", "C. Russia", "D. Poland", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "What are Kelvins used to measure?", NULL, "A. temperature", "B. mass", "C. density", "D. velocity", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "Which of these particles always consists of three quarks?", NULL, "A. meson", "B. baryon", "C. neutrino", "D. manson", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "What is the most common isotope of hydrogen?", NULL, "A. Protium", "B. Deuterium", "C. Tritum", "D. Hydrogen only has one isotope!", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "Who is credited with the invention of the modern periodic table?", NULL, "A. Nobel", "B. Mendel", "C. Mendeleev", "D. Lavoisier", "C", 0, 1);
+INSERT INTO Question VALUES (NULL, "Which of these elements is a nonmetal?", NULL, "A. Sulfur", "B. Manganese", "C. Aluminum", "D. Beryllium", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "Organic chemistry is the study of the compounds that make up living organisms. All organic molecules contain:", NULL, "A. Carbon Only", "B. Carbon and Hydrogen", "C. Carbon and Nitrogen", "D. Carbon, Hydrogen, and Oxygen", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "The symbol Ag stands for which element?", NULL, "A. Gallium", "B. Magnesium", "C. Gold", "D. Silver", "D", 0, 1);
+INSERT INTO Question VALUES (NULL, "You can't live without iron. Where in the body is most of the iron located?", NULL, "A. your brain", "B. your bones", "C. your skin", "D. your blood", "D", 0, 1);
+INSERT INTO Question VALUES (NULL, "What is the full form of CPU?", NULL, "A. Central Process Unit", "B. Central Processing Unit", "C. Central Programming Unit", "D. Central Progressive Unit", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "Which of the following numbers in decimal equals 11011 in binary representation?", NULL, "A. 27", "B. 16", "C. 26", "D. 11", "A", 0, 1);
+INSERT INTO Question VALUES (NULL, "32173298128 mod 2 equals:", NULL, "A. 1", "B. 0", "C. 16,086,649,064", "D. 32173298128", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "What is the result of the following operation? 2 + 2 * 2", NULL, "A. 8", "B. 6", "C. 2", "D. 4", "B", 0, 1);
+INSERT INTO Question VALUES (NULL, "Simplify: 3 + 6 * (5 + 4) ÷ 3 - 7", NULL, "A. 14", "B. 15", "C. 11", "D. 0", "A", 0, 1);
+
+INSERT INTO Question VALUES (NULL, "In which year India gained independence from Britain?", NULL, "A. 1953", "B. 1947", "C. 1949", "D. 1943", "B", 0, 2);
+INSERT INTO Question VALUES (NULL, "Which US state was its own country from 1777 to 1791?", NULL, "A. Vermont", "B. Maine", "C. New Hampshire", "D. Massachusetts", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "The Challenger Disaster took place on which date?", NULL, "A. November 6, 1987", "B. January 28, 1986", "C. January 2, 1989", "D. December 28, 1984", "B", 0, 2);
+INSERT INTO Question VALUES (NULL, "In which year has World War I began?", NULL, "A. 1914", "B. 1917", "C. 1918", "D. 1938", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "In which country was Adolf Hitler born?", NULL, "A. Austria", "B. Hungary", "C. German", "D. Sweden", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "John F. Kennedy was assassinated in:", NULL, "A. New York", "B. Dallas", "C. Chicago", "D. New York", "B", 0, 2);
+INSERT INTO Question VALUES (NULL, "Who fought in the war of 1812?", NULL, "A. Andrew Jackson", "B. Arthur Wellsley", "C. Otto von Bismarck", "D. Napoleon Bonaparte", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "In which country was The Battle of Hastings (in 1066) fought?", NULL, "A. France", "B. Russia", "C. England", "D. Norway", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "The first successful printing press was developed by:", NULL, "A. Johannes Gutenburg", "B. Benjamin Franklin", "C. Sir Isaac Newton", "D. Martin Luther", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "The disease that ravaged and killed a third of Europe's population in the 14th century is known as:", NULL, "A. The White Death", "B. The Black Plague", "C. Smallpox", "D. The Bubonic Plague", "D", 0, 2);
+INSERT INTO Question VALUES (NULL, "The Hundred Years War was fought between which two countries?", NULL, "A. Italy and Carthage", "B. England and Germany", "C. France and England", "D. Spain and France", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "Which Roman Emperor built a massive wall across Northern Britain in 122 A.D.?", NULL, "A. Marcus Aurelius", "B. Hadrian", "C. Nero", "D. Augustus", "B", 0, 2);
+INSERT INTO Question VALUES (NULL, "This man wrote a document known as the 95 Theses", NULL, "A. Martin Luther", "B. Saint Augustus", "C. Henry David Thoreau", "D. Voltaire", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "In 1594 William Shakespeare joined the company of this London theatre:", NULL, "A. Broadway", "B. Oxford University Theatre", "C. The Globe", "D. The London Palladium", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "The Khmer Rouge was a regime ruling this nation in the 20th century.", NULL, "A. Vietnam", "B. Laos", "C. Cambodia", "D. China", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "What famous 5th century A.D conqueror was known as 'The Scourge of God'?", NULL, "A. Hannibal", "B. Julius Caesar", "C. William the Conqueror", "D. Atilla the Hun", "D", 0, 2);
+INSERT INTO Question VALUES (NULL, "Who was the first Western explorer to reach China?", NULL, "A. Magellan", "B. Cook", "C. Marco Polo", "D. Francis Drake", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "Who had his head chopped off in 1649?", NULL, "A. James I", "B. James II", "C. Charles I", "D. Charles II", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "When was William Shakespeare born?", NULL, "A. 1554", "B. 1564", "C. 1574", "D. 1584", "B", 0, 2);
+INSERT INTO Question VALUES (NULL, "How many years did the 30 Years War last?", NULL, "A. 28", "B. 29", "C. 30", "D. 31", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "When did the French revolution begin?", NULL, "A. 1719", "B. 1739", "C. 1769", "D. 1789", "D", 0, 2);
+INSERT INTO Question VALUES (NULL, "Who won the battle of Flodden Field in 1513?", NULL, "A. England", "B. Scotland", "C. Wales", "D. Non of the above", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "The nations involved in the war formed two opposing alliances. What were they called?", NULL, "A. Axis and Allies", "B. Homeland and Confederacy", "C. Nazis and Freemen", "D. Lords and Peasants", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "How many years did World War II last?", NULL, "A. Four", "B. Nine", "C. Six", "D. Five", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "Who was the U.S. president when Pearl Harbor was attacked?", NULL, "A. Franklin D. Roosevelt", "B. Calvin Coolidge", "C. Herbert Hoover", "D. George Washington", "", 0, 2);
+INSERT INTO Question VALUES (NULL, "In what year did Germany invade Poland?", NULL, "A. 1939", "B. 1929", "C. 1941", "D. 1945", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "Adolf Hitler predicted the war in his memoir published in 1925. What was it called?", NULL, "A. Mein Kampf", "B. Heimat", "C. Meinem Triumph", "D. Nationalismus", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "How many different countries were involved in World War II?", NULL, "A. 30", "B. 28", "C. 24", "D. 34", "A", 0, 2);
+INSERT INTO Question VALUES (NULL, "About how many battle-wounded people were there worldwide during the course of World War II?", NULL, "A. 10 million", "B. 40 million", "C. 25 million", "D. 35 million", "C", 0, 2);
+INSERT INTO Question VALUES (NULL, "Who first used the phrase `the war to end all wars`?", NULL, "A. Winston Churchill", "B. Woodrow Wilson", "C. Harry Truman", "D. Adolf Hitler", "", 0, 2);
+
+INSERT INTO Question VALUES (NULL, "In Australian football, what is the maximum number of players allowed on the field at a time?", NULL, "A. 14", "B. 23", "C. 28", "D. 36", "D", 0, 3);
+INSERT INTO Question VALUES (NULL, "What player was the first to win five straight Wimbledon tennis titles?", NULL, "A. Arthur Ashe", "B. Roger Federer", "C. Bjorn Borg", "D. Andre Agassi", "C", 0, 3);
+INSERT INTO Question VALUES (NULL, "Who ran the first four-minute mile?", NULL, "A. Roger Bannister", "B. Roger Ramjet", "C. Roger Guereiro", "D. Roger Moore", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "In polo, what is a period of play called?", NULL, "A. Half", "B. Chukka", "C. Quarter", "D. Set", "B", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many years old are horses that run in the Kentucky Derby?", NULL, "A. 1", "B. 2", "C. 3", "D. 4", "C", 0, 3);
+INSERT INTO Question VALUES (NULL, "In which year did Maradona score a goal with his hand?", NULL, "A. 1986", "B. 1985", "C. 1978", "D. 1969", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "What is the national sport in Japan?", NULL, "A. Sumo wrestling", "B. Judo", "C. Kung-Fu", "D. Aikido", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many players are on each side of the net in beach volleyball?", NULL, "A. 1", "B. 3", "C. 2", "D. 6", "C", 0, 3);
+INSERT INTO Question VALUES (NULL, "How long is an Olympic swimming pool?", NULL, "A. 50 meters", "B. 25 meters", "C. 30 meters", "D. 100 meters", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many players has a hockey team got on the ice?", NULL, "A. Five", "B. Six", "C. Eight", "D. Four", "B", 0, 3);
+INSERT INTO Question VALUES (NULL, "What English football club was originally known as Newton Heath?", NULL, "A. Chelsea", "B. Arsenal", "C. Manchester City", "D. Manchester United", "D", 0, 3);
+INSERT INTO Question VALUES (NULL, "Which international football team is sometimes known as the `Azzurri`?", NULL, "A. Italy", "B. France", "C. Sweden", "D. Romania", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many minutes of play are there in an American football match?", NULL, "A. 60", "B. 50", "C. 45", "D. 90", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many players make up a volleyball team?", NULL, "A. 6", "B. 8", "C. 11", "D. 9", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "Which football team won the World Cup in 2002?", NULL, "A. Brazil", "B. Argentina", "C. Germany", "D. Italy", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "Which football team won the World Cup in 1986?", NULL, "A. Brazil", "B. Argentina", "C. Germany", "D. Italy", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many red balls are there in a game of snooker?", NULL, "A. 15", "B. 5", "C. 7", "D. 12", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "Which country does Zinedine Zidane play for in international football?", NULL, "A. Italy", "B. Geamany", "C. France", "D. England", "C", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many squares are there on a chess board?", NULL, "A. 64", "B. 24", "C. 90", "D. 69", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "In cycling, what colour jersey is awarded to the leader in a stage race of the Tour de France?", NULL, "A. Pink", "B. Yellow", "C. Green", "D. Blue", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "What was Mohammad Ali`s birth name?", NULL, "A. Cassius Clay", "B. Steve Madden", "C. Evander McCorry", "D. Conor Alvarez", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "Which Football team overturned a 3-0 half-time score to win the Champions League final in 2005?", NULL, "A. Chelsea", "B. F.C. Barcelona", "C. Liverpool", "D. Real Madrit", "C", 0, 3);
+INSERT INTO Question VALUES (NULL, "In 1986 which boxer beat Trevor Burbick to become the youngest ever heavyweight world champion?", NULL, "A. Evander Holyfield", "B. Muhammad Ali", "C. Mike Tyson", "D. Artur Binkowski", "C", 0, 3);
+INSERT INTO Question VALUES (NULL, "Where were the 1984 summer Olympics held?", NULL, "A. Montreal", "B. Los Angeles", "C. Berlin", "D. Madrit", "B", 0, 3);
+INSERT INTO Question VALUES (NULL, "Over how many days is a decathlon contested in the Olympic Games?", NULL, "A. 2", "B. 4", "C. 5", "D. 3", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "How long is a hockey pitch?", NULL, "A. 100 yards", "B. 60 yards", "C. 50 yards", "D. 20 yards", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "How many players are there in a baseball team?", NULL, "A. 9", "B. 8", "C. 12", "D. 10", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "In what sport is the `Fosbury flop` technique used?", NULL, "A. High Jump", "B. Cricket", "C. Polo", "D. Long jump", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "Which sport do the Chicago Bears play?", NULL, "A. American Football", "B. Rugby", "C. Baseball", "D. Hockey", "A", 0, 3);
+INSERT INTO Question VALUES (NULL, "What colour is the centre scoring zone on an archery target?", NULL, "A. Gold", "B. Red", "C. Yellow", "D. Black", "A", 0, 3);
+
+INSERT INTO Question VALUES (NULL, "How many Disney Princesses have red hair?", NULL, "A. 1", "B. 2", "C. 3", "D. 4", "2", 0, 4);
+INSERT INTO Question VALUES (NULL, "What is the name of the cat in Cinderella?", NULL, "A. Sylvester", "B. Lucifer", "C. Tom", "D. Tim", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "Which dwarf does not want to initially accept Snow White into the house?", NULL, "A. Happy", "B. Grumpy", "C. Hoppey", "D. Bashful", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "Which Star Wars actor was nominated for an Academy Award?", NULL, "A. Harrison Ford", "B. Remy Bonnyaski", "C. Alec Guinness", "D. John Ratzenbergen", "C", 0, 4);
+INSERT INTO Question VALUES (NULL, "Who was Princess Leia's only hope in Star Wars?", NULL, "A. Yoda", "B. Emperor Palpatine", "C. Obi-Wan Kenobi", "D. Luke Skywalker", "C", 0, 4);
+INSERT INTO Question VALUES (NULL, "Who was the voice of Yoda in Star Wars?", NULL, "A. Frank Oz", "B. Jim Henson", "C. Kevin Clash", "D. John Wardy", "", 0, 4);
+INSERT INTO Question VALUES (NULL, "In Toy Story, what is the name of Andy's neighbor, who enjoys torturing and destroying toys?", NULL, "A. Tad", "B. Sid", "C. Bud", "D. Lance", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "Ratatouille tells the story of Remy the rat, who dreams of becoming what?", NULL, "A. An astronaut", "B. A cowboy", "C. A singer", "D. A chef", "D", 0, 4);
+INSERT INTO Question VALUES (NULL, "What kind of fish is Nemo?", NULL, "A. Clownfish", "B. Marlin", "C. Trout", "D. Swordfish", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "What is the superhero name of Mr. Incredible's wife in The Incredibles?", NULL, "A. Invisionwoman", "B. Elastigirl", "C. Mirage", "D. Honey Best", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "What is the name of the robot sent to find vegetation on Earth that WALL-E falls in love with?", NULL, "A. DORY", "B. PAM", "C. EVE", "D. UMA", "C", 0, 4);
+INSERT INTO Question VALUES (NULL, "What is the first name of the Deputy Headmistress of Hogwarts?", NULL, "A. Maisey", "B. Minevra", "C. Mabel", "D. Sophie", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "Who was the Half-Blood Prince in Harry Potter?", NULL, "A. Alastor Moody", "B. Lord Voldemort", "C. Argus Flitch", "D. Severus Snape", "D", 0, 4);
+INSERT INTO Question VALUES (NULL, "This film was a mega hit for director Quentin Tarantino.", NULL, "A. Pulp Fiction", "B. Die Another Day", "C. Raging Blue", "D. The Wolf Of Wall Street", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "This Mel Gibson epic took us on a trip to the Scottish highlands to defeat the British.", NULL, "A. Bravehearth", "B. Robin Hood", "C. Miller's Crossing", "D. The Searchers", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "Keanu Reeves and Laurence Fishburne starred in this futuristic action film.", NULL, "A. The Matrix", "B. Terminator", "C. Armageddon", "D. Nightcrawler", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "`Leave the gun. ______.` - The Godfather", NULL, "A. Take the Prosciutto", "B. Take the Napoleon", "C. Take the dead guy", "D. Take the Cannoli", "D", 0, 4);
+INSERT INTO Question VALUES (NULL, "Kevin McCallister and his family live in which American city?", NULL, "A. New York", "B. Chicago", "C. Boston", "D. Milwaukee", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "What was the first name of the main character in Night at the Museum?", NULL, "A. Larry", "B. Ricky", "C. Owens", "D. Ben", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "Where do Fiona’s parents live in Shrek?", NULL, "A. Duloc", "B. Florin", "C. Mordor", "D. Far Far Away", "D", 0, 4);
+INSERT INTO Question VALUES (NULL, "Who is Donkey’s wife in Shrek?", NULL, "A. Pixie", "B. Monster", "C. Dragon", "D. Warewolf", "C", 0, 4);
+INSERT INTO Question VALUES (NULL, "How many kids do Shrek and Fiona have?", NULL, "A. 2", "B. 3", "C. 4", "D. 5", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "What’s Donkey’s favorite breakfast in Shrek?", NULL, "A. Pacnackes", "B. Eggs", "C. Bacon", "D. Waffles", "D", 0, 4);
+INSERT INTO Question VALUES (NULL, "The movie, 'Pulp Fiction', was directed by whom?", NULL, "A. Steven Spielberg", "B. Quentin Tarantino", "C. Rowdy Herrington", "D. Rand Ravich", "B", 0, 4);
+INSERT INTO Question VALUES (NULL, "In what American city does `Pain and Gain` take place?", NULL, "A. Boston", "B. Dallas", "C. Miami", "D. Florida", "C", 0, 4);
+INSERT INTO Question VALUES (NULL, "What Is John Wick’s Nickname?", NULL, "A. Baba Yaga", "B. The Boogeyman", "C. The Wicker Man", "D. The Undertaker", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "Which car model was stolen from John Wick?", NULL, "A. 1970 Chevrolet Chevelle SS 454", "B. 1969 Dodge Charger R/T-SE", "C. 1969 Ford Mustang Mach 1", "D. 1969 AMX/3", "C", 0, 4);
+INSERT INTO Question VALUES (NULL, "Who has played Jack Sparrow in Pirates of the Caribbean?", NULL, "A. Johnny Depp", "B. Orlando Bloom", "C. Michael Douglas", "D. Kevin Costner", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "What was the name of the Jordan's Belford company in The Wolf of Wall Street?", NULL, "A. Straton Oakmont", "B. Berkshire Hathaway", "C. Walmart", "D. Belford Corporation", "A", 0, 4);
+INSERT INTO Question VALUES (NULL, "What was the name of the second Jordan Belford's wife in The Wolf of Wall Street?", NULL, "A. Naomi", "B. Cindy", "C. Emma", "D. Sophia", "A", 0, 4);
+
+INSERT INTO Question VALUES (NULL, "Which Beatle performed a James Bond theme song?", NULL, "A. John Lennon", "B. George Harrison", "C. Paul McCartney", "D. Ringo Starr", "", 0, 5);
+INSERT INTO Question VALUES (NULL, "Who sings Call Me Maybe?", NULL, "A. Taylor Swift", "B. Carly Rae Yepsen", "C. Lana Del Rey", "D. Rihanna", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "What are you gonna hear Katy Perry do?", NULL, "A. Roar", "B. Howl", "C. Hiss", "D. Shout", "", 0, 5);
+INSERT INTO Question VALUES (NULL, "In which video does Michael Jackson play a zombie?", NULL, "A. Thriller", "B. Bad", "C. Beat It", "D. Speed Demon", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which movie is Can't Stop the Feeling from?", NULL, "A. Suicide Squad", "B. Trolls", "C. Pitch Perfect 2", "D. Zootopia", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which Dolly Parton song did Miley Cyrus cover?", NULL, "A. Islands in the Stream", "B. Coat of Many Colors", "C. Here you come again", "D. Jolene", "D", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which country is Gangnam Style from?", NULL, "A. North Korea", "B. Japan", "C. South Korea", "D. China", "C", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which of these is NOT a Whitney Houston song?", NULL, "A. I Wanna Dance With Somebody", "B. The Time After Time", "C. Gratest Love Of All", "D. I will always love you", "B 	", 0, 5);
+INSERT INTO Question VALUES (NULL, "At the end of what month do Green Day want you to wake them up?", NULL, "A. August", "B. October", "C. September", "D. November", "C", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which of these is NOT a song of Queen?", NULL, "A. Don't Stop Me Now", "B. Born to Run", "C. Bicycle Race", "D. Another One Bites the Dust", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "What is the name of Beyonce’s aggressive onstage alter ego?", NULL, "A. Sasha Fierce", "B. Tracy Cannon", "C. Monique Rogers", "D. Tara Strong", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "“Billie Jean is not my” what?", NULL, "A. Mother", "B. Friend", "C. Wife", "D. Lover", "D", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which of these is NOT a Black Eyed Peas song?", NULL, "A. Where is the Love", "B. We are young", "C. I Gotta Feeling", "D. Let's Get It Started", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "Who sings Hello?", NULL, "A. Ariana Grande", "B. Adele", "C. Lorde", "D. Selena Gomez", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "Whose 2013 world tour was called ‘The Mrs Carter Show’?", NULL, "A. Beyonce", "B. Lady Gaga", "C. Rihanna", "D. Shakira", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "What is the first name of compose Vivaldi?", NULL, "A. Antonio", "B. Luciano", "C. Marcus", "D. Bastian", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "Gwen Stefani has recorded songs with all of the following artists EXCEPT:", NULL, "A. Moby", "B. Madonna", "C. Akon", "D. Eve", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "Justin Timberlake appeared on what television show before becoming a pop star?", NULL, "A. The Mickey Mouse Club", "B. American Idol", "C. Full House", "D. The Brady Bunch", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "What artist's real name is Stacy Ferguson?", NULL, "A. Pink", "B. Fergie", "C. Ciara", "D. Lil Mo", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "What year did Green Day release Dookie, the band's major-label debut?", NULL, "A. 1994", "B. 1985", "C. 2001", "D. 1997", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "Beyoncé was a member of which band before embarking on a solo career?", NULL, "A. TLC", "B. Black Eyed Peas", "C. Destinys Child", "D. The Fugees", "C", 0, 5);
+INSERT INTO Question VALUES (NULL, "Where was Shakira born?", NULL, "A. Puerto Rico", "B. Colombia", "C. Venezuela", "D. Dominican Republic", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "What was the first single Kelly Clarkson released after winning American Idol?", NULL, "A. A Moment Like This", "B. Because of You", "C. Behind These Hazel Eyes", "D. Breakaway", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "What was the cause of death of Barry White?", NULL, "A. Plane Crash", "B. Anorexia", "C. High blood pressure and kidney failure", "D. He was shot by his father", "", 0, 5);
+INSERT INTO Question VALUES (NULL, "What was the cause of Bob Marley?", NULL, "A. Plane Crash", "B. Hearth Attack", "C. Cancer", "D. Drowning", "C", 0, 5);
+INSERT INTO Question VALUES (NULL, "What was the name of the famous girl band that Cheryl Cole belonged to?", NULL, "A. Girls Aloud", "B. Destinys Child", "C. Little Mix", "D. All Saints", "A", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which mathematical symbol is not the name of an Ed Sheeran album?", NULL, "A. Plus", "B. Divide", "C. Subtract", "D. Multiply", "C", 0, 5);
+INSERT INTO Question VALUES (NULL, "Complete the Mark Ronson song title: Uptown...", NULL, "A. Girl", "B. Funk", "C. Tunes", "D. Fight", "B", 0, 5);
+INSERT INTO Question VALUES (NULL, "What is the song that launched Justin Bieber to superstardom?", NULL, "A. What Do You Mean?", "B. Love Yourself", "C. Sorry", "D. Baby", "", 0, 5);
+INSERT INTO Question VALUES (NULL, "Which Taylor Swift album is Shake It Off on?", NULL, "A. Speak Now", "B. Red", "C. Taylor Swift", "D. 1989", "D", 0, 5);
+
+
+
+//ANIMALS
+
+INSERT INTO Question VALUES (NULL, "What kind of fish is not referred to as scrod?", NULL, "A. Cod", "B. Haddock", "C. Tuna", "D. Pollock", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "What kind of animal is a bongo?", NULL, "A. Roddent", "B. Antelope", "C. Parrot", "D. Worm", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "In some parts of the world, mysterious deaths of which creatures threaten agriculture?", NULL, "A. bees", "B. vipers", "C. fire ants", "D. kangaroos", "A", 0, 6);
+INSERT INTO Question VALUES (NULL, "What is the truth about dolphins?", NULL, "A. There are only two species", "B. They do not appear in Europe", "C. They are mammals", "D. They are herbivores", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "What kind of animal is a kodkod?", NULL, "A. Duck", "B. Cat", "C. Catfish", "D. Deer", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "How many times a minute, does the average adult elephant's heart beat?", NULL, "A. 25", "B. 35", "C. 55", "D. 75", "A", 0, 6);
+INSERT INTO Question VALUES (NULL, "What kind of animal is a thickknee?", NULL, "A. Reptile", "B. Amphibian", "C. Mammal", "D. Bird", "D", 0, 6);
+INSERT INTO Question VALUES (NULL, "From where did all breeds of domesticated rabbit originate from?", NULL, "A. Asia", "B. Europe", "C. America", "D. Australia", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "In the 1950s, what disease was introduced to curb the rabbit over population numbers?", NULL, "A. Myxomatosis", "B. Alxetosis", "C. Encephalitides", "D. Rabies", "A", 0, 6);
+INSERT INTO Question VALUES (NULL, "What is a male rabbit called?", NULL, "A. Doe", "B. Pig", "C. Buck", "D. Hind", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "What kind of animal is a matamata?", NULL, "A. Finch", "B. Snake", "C. Turtle", "D. Shark", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "An octopus has eight tentacles.  How many does its relative the squid have?", NULL, "A. 8", "B. 10", "C. 12", "D. 14", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "What is the normal body temperature of a horse?", NULL, "A. 104.5", "B. 97.1", "C. 90.5", "D. 100.5", "D", 0, 6);
+INSERT INTO Question VALUES (NULL, "What male animal has the greatest number of mates in a season?", NULL, "A. Giraffe", "B. Northern Fur Seal", "C. Rabbit", "D. Elephant Seal", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "How many eyes, or eye spots do most starfish have?", NULL, "A. 1", "B. 3", "C. 5", "D. 7", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "How many muscles are there in an elephant's trunk?", NULL, "A. 10,000", "B. 25,000", "C. 75,000", "D. 100,000", "D", 0, 6);
+INSERT INTO Question VALUES (NULL, "How many times does a bumblebee flap is wings per second ?", NULL, "A. 160", "B. 1080", "C. 550", "D. 840", "A", 0, 6);
+INSERT INTO Question VALUES (NULL, "What earthly creature has four noses and over 2500 tiny teeth?", NULL, "A. Centipede", "B. Snail", "C. Slug", "D. Possom", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "Which is the largest animal ever to have inhabited the Earth?", NULL, "A. Argentinosaurus", "B. Blue Whale", "C. Shantungosaurus", "D. Mammoth", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "What distance can the average healthy slug cover in a day?", NULL, "A. 10 Yards", "B. 25 Yards", "C. 40 Yards", "D. 50 Yards", "D", 0, 6);
+INSERT INTO Question VALUES (NULL, "What is the average top speed of a house cat?", NULL, "A. 21 mph", "B. 28 mph", "C. 40 mph", "D. 31 mph", "D", 0, 6);
+INSERT INTO Question VALUES (NULL, "What country was the first to send a cat into Space?", NULL, "A. America", "B. Russia", "C. France", "D. China", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "A group of crows is called a:?", NULL, "A. Murder", "B. Haunting", "C. Flock", "D. Gaggle", "A", 0, 6);
+INSERT INTO Question VALUES (NULL, "A group of hyenas is known as a:?", NULL, "A. Colony", "B. Cackle", "C. Troop", "D. Rookery", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "An assembly of owls is referred to as a:", NULL, "A. Pack", "B. Parliament", "C. Wisdom", "D. Superfluity", "B", 0, 6);
+INSERT INTO Question VALUES (NULL, "A cluster of jellyfish is called a:", NULL, "A. Muster", "B. Team", "C. Smack", "D. Company", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "A congregation of rhinoceroses is known as a:", NULL, "A. Crash", "B. Pod", "C. Band", "D. Bouquet", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "Which member of genus Lynx is the smallest in size?", NULL, "A. Eurasian lynx", "B. Iberian lynx", "C. Canada lynx", "D. Bobcat", "C", 0, 6);
+INSERT INTO Question VALUES (NULL, "Which big cat listed below currently resides in isolated pockets of Central and South America?", NULL, "A. Jaguar", "B. Tiger", "C. Lion", "D. Leopard", "A", 0, 6);
+INSERT INTO Question VALUES (NULL, "The term black panther is most frequently applied to:", NULL, "A. Leopards and cheetahs", "B. Leopards and jaguars", "C. Lions and tigers", "D. Tigers and jaguars", "B", 0, 6);
+
+
+//FOOD AND DRINKS
+
+INSERT INTO Question VALUES (NULL, "What breakfast food gets its name from the German word for "stirrup"?", NULL, "A. toast", "B. pancakes", "C. waffles", "D. Bagel", "D", 0, 7);
+INSERT INTO Question VALUES (NULL, "What animal is the source of the milk used in making Roquefort cheese?", NULL, "A. Cow", "B. Camel", "C. Ewe (female sheep) ", "D. Goat", "C", 0, 7);
+INSERT INTO Question VALUES (NULL, "What beverage did Pope Clement VIII officially recognize as a Christian drink in an edict issued in 1592?", NULL, "A. Coffee", "B. Wine", "C. Beer", "D. Tea", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "On what vegetable did an ancient Egyptian place his right hand when taking an oath?", NULL, "A. Corn", "B. Onion", "C. Peppers", "D. Peas", "B", 0, 7);
+INSERT INTO Question VALUES (NULL, "Which American city produces more egg rolls than any other in the United States?", NULL, "A. Houston", "B. San Francisco", "C. Seattle", "D. Little Rock", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "How many different animal shapes are there in the "Animal Crackers" cookie zoo?", NULL, "A. 10", "B. 20", "C. 8", "D. 18", "D", 0, 7);
+INSERT INTO Question VALUES (NULL, "Where did the pineapple plant originate?", NULL, "A. Hawaii", "B. South America", "C. France", "D. Mexico", "B", 0, 7);
+INSERT INTO Question VALUES (NULL, "What was margarine called when it was first marketed in England?", NULL, "A. Butterine", "B. Butter", "C. Butter Spread", "D. Butter Cream", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "Under U.S. government regulations, what percentage of peanut butter has to be peanuts?", NULL, "A. 50%", "B. 70%", "C. 90%", "D. 80%", "C", 0, 7);
+INSERT INTO Question VALUES (NULL, "How does chocolate grow?", NULL, "A. on trees", "B. in the ground", "C. in a factory", "D. on a vine", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "Which European country was the first to enjoy chocolate?", NULL, "A. England", "B. Switzerland", "C. Spain", "D. France", "C", 0, 7);
+INSERT INTO Question VALUES (NULL, "In about the late 17th century, what ingredient did people start adding to drinking chocolate?", NULL, "A. milk", "B. vanilla", "C. pepper", "D. cinnamon", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "In the brewing process, the fermentation step turns sugar into alcohol and what else?", NULL, "A. Malt", "B. Carbon dioxide", "C. Nitrogen", "D. More sugar", "B", 0, 7);
+INSERT INTO Question VALUES (NULL, "What is the final step in beer production?", NULL, "A. Packaging", "B. Mashing", "C. Filtration", "D. Malting", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "What type of custard is used to fill an éclair?", NULL, "A. cr?me française", "B. cr?me pâtissi?re", "C. cr?me br?lée", "D. cr?me anglaise", "B", 0, 7);
+INSERT INTO Question VALUES (NULL, "What is the main ingredient in meringue?", NULL, "A. eggs", "B. gelatin", "C. marshmallow", "D. cream", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "Which of these “cakes” is not actually a cake?", NULL, "A. flourless cake", "B. cheesecake", "C. yeast cake", "D. chiffon cake", "B", 0, 7);
+INSERT INTO Question VALUES (NULL, "How many cups are in a pint?", NULL, "A. 1", "B. 6", "C. 2", "D. 4", "C", 0, 7);
+INSERT INTO Question VALUES (NULL, "Which of these grains does not contain gluten?", NULL, "A. buckwheat", "B. barley", "C. farro", "D. wheat", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "What causes skunked beer?", NULL, "A. Light", "B. Old age", "C. Bad yeast", "D. Heat", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "What type of chocolate was Nestlé the first, in 1930, to manufacture?", NULL, "A. milk chocolate", "B. Nestlé crunch bars", "C. white chocolate", "D. truffles", "C", 0, 7);
+INSERT INTO Question VALUES (NULL, "Which of these is not related to the others?", NULL, "A. green bean", "B. lupin", "C. potato", "D. crowder pea", "C", 0, 7);
+INSERT INTO Question VALUES (NULL, "What essential foodstuff has been used as money?", NULL, "A. olive oil", "B. salt", "C. celery", "D. pepper", "B", 0, 7);
+INSERT INTO Question VALUES (NULL, "What kind of thing is a mushroom?", NULL, "A. fungus", "B. legume", "C. vine", "D. tuber", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "From what is sauerkraut made?", NULL, "A. cucumbers", "B. carrots", "C. potatoes", "D. cabbage", "D", 0, 7);
+INSERT INTO Question VALUES (NULL, "What does "extra virgin" in olive oil refer to?", NULL, "A. acidity", "B. age", "C. aroma", "D. viscosity", "A", 0, 7);
+INSERT INTO Question VALUES (NULL, "Gelato, a version of ice cream that contains very low butterfat, originates from what country?", NULL, "A. France", "B. Japan", "C. Uruguay", "D. Italy", "D", 0, 7);
+INSERT INTO Question VALUES (NULL, "The ice-cream cone originates from what American state?", NULL, "A. Illinois", "B. New York", "C. Missouri", "D. Arizona", "C", 0, 7);
+INSERT INTO Question VALUES (NULL, "In addition to butterfat, milk and sugar, French-type ice creams and custards specifically contain what added ingredient?", NULL, "A. Potato", "B. Pepper", "C. Baking Soda", "D. Egg", "D", 0, 7);
+INSERT INTO Question VALUES (NULL, "Which cooking method is never used in making dumplings?", NULL, "A. Steaming", "B. Boiling", "C. Roasting", "D. Frying", "C", 0, 7);
+
+
+//GEOGRAPHY
+
+INSERT INTO Question VALUES (NULL, "Which city is a city-state?", NULL, "A. Paris", "B. London", "C. New York", "D. Vatican", "D", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the capital of Turkey?", NULL, "A. Hanoi", "B. Ankara", "C. Wakanda", "D. Phnompenh", "B", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the capital of Croatia?", NULL, "A. Hanoi", "B. Ankara", "C. Wakanda", "D. Zagreb", "D", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the national animal of China?", NULL, "A. Tiger", "B. Nappa", "C. Giant panda", "D. Elephant", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the national animal of Botswana?", NULL, "A. Zebra", "B. Nappa", "C. Giant panda", "D. Elephant", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the national animal of Ethiopia?", NULL, "A. Zebra", "B. Nappa", "C. Lion", "D. Elephant", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "Which Turkish city has the name of a cartoon character?", NULL, "A. Superman", "B. Ant-man", "C. Spiderman", "D. Batman", "D", 0, 8);
+INSERT INTO Question VALUES (NULL, "Which Turkish city has the name of a cartoon character?", NULL, "A. Superman", "B. Ant-man", "C. Spiderman", "D. Batman", "D", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the noisiest city in the world?", NULL, "A. Bombay", "B. Hong Kong", "C. Hanoi", "D. Hochiminh City", "B", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the name of the desert area in Mexico?", NULL, "A. Sonora", "B. Sahara", "C. Texas", "D. Sehere", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is a very cold part of Russia?", NULL, "A. Nortwest", "B. Siberia", "C. Southside", "D. Moscow", "B", 0, 8);
+INSERT INTO Question VALUES (NULL, "How many continents are there?", NULL, "A. Four", "B. Seven", "C. Two", "D. Three", "B", 0, 8);
+INSERT INTO Question VALUES (NULL, "On which Italian island is Palermo?", NULL, "A. Crystalmere", "B. Shadecliff", "C. Sicily", "D. Fallborough", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "How many time zones are there in the world?", NULL, "A. One", "B. Two", "C. Twenty-four", "D. Three", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "Which is the largest desert on earth?", NULL, "A. Sahara", "B. Hong Kong", "C. Hanoi", "D. Hochiminh", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "Which river is flowing through Rome?", NULL, "A. Han River", "B. Nyle", "C. Wolga river", "D. Tiber", "D", 0, 8);
+INSERT INTO Question VALUES (NULL, "Which country did once have the name Rhodesia?", NULL, "A. USA", "B. Russia", "C. Zimbabwe", "D. China", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "What island, which belonged to Denmark, was independent in 1944?", NULL, "A. Philipines", "B. Timor", "C. Iceland", "D. HoangSa Island", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the largest state of the United States?", NULL, "A. Newyork", "B. Alaska", "C. Texas", "D. Illinois", "B", 0, 8);
+INSERT INTO Question VALUES (NULL, "On which continent can you visit Sierra Leone?", NULL, "A. Africa", "B. Asia", "C. East-Asia", "D. West-Asia", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "Which European river does flow through six different countries?", NULL, "A. Donau river", "B. Nyle", "C. Wolga river", "D. Tiber", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the longest river in Europe?", NULL, "A. Tiber", "B. Nyle", "C. Wolga river", "D. Donau river", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "Through which capital does the Liffey river flow?", NULL, "A. Paris", "B. Dublin", "C. Warsaw", "D. Zagreb", "B", 0, 8);
+(24) INSERT INTO Question VALUES (NULL, "What is the second largest country in Europe after Russia?", NULL, "A. France", "B. Russia", "C. Zimbabwe", "D. China", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the capital of the American state Hawaii?", NULL, "A. USA", "B. Russia", "C. Zimbabwe", "D. Honolulu", "D", 0, 8);
+INSERT INTO Question VALUES (NULL, "What do the Japanese people call their own country?", NULL, "A. Nippon", "B. Siberia", "C. Southside", "D. Moscow", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the largest city in Canada?", NULL, "A. Toronto", "B. Alaska", "C. Texas", "D. Illinois", "A", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the capital city of Australia?", NULL, "A. Luanda", "B. Rijad", "C. Texas", "D. Canberra", "D", 0, 8);
+INSERT INTO Question VALUES (NULL, "Which two seas are joined by the Suez Canal?", NULL, "A. Baltic Sea and Sea Banda", "B. Sea Banda and Barents Sea", "C. The Mediterranean Sea and the Red Seas", "D. The Mediterranean Sea and the Baltic Sea", "C", 0, 8);
+INSERT INTO Question VALUES (NULL, "What is the capital city of Andora?", NULL, "A. Luanda", "B. Rijad", "C. Andora", "D. Canberra", "C", 0, 8);
+
+
+//FAMOUS PEOPLE
+
+INSERT INTO Question VALUES (NULL, "Which drink did The Spice Girls promote?", NULL, "A. Pepsi", "B. Snapple", "C. Coke", "D. Apple Sipce Tea", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "What was T.E. Lawrence’s nickname?", NULL, "A. Tom Swift", "B. D.H. Lawrence", "C. Lawrence of Arabia", "D. Tom Thumb", "C", 0, 9);
+INSERT INTO Question VALUES (NULL, "Who is known as the "Father of Medicine"?", NULL, "A. Hippocerne", "B. Augustus", "C. Hesiod", "D. Hippocrates", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "What war correspondent reported on the Battle of Omdurman?", NULL, "A. Ernie Pyle", "B. Winston Churchill", "C. Bernard Fall", "D. Ernest Hemingway", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "Who built the Golghar granary in Patna?", NULL, "A. Robert Clive", "B. John Garstin", "C. Arthur Wellesley", "D. Winston Churchill", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "For what was Beau Brummell known?", NULL, "A. revolutionary politics", "B. journalism", "C. fashion", "D. food", "C", 0, 9);
+INSERT INTO Question VALUES (NULL, "Which of these was not a well-known historian?", NULL, "A. Albert Schweitzer", "B. David McCullough", "C. Arnold Toynbee", "D. Thucydides", "A", 0, 9);
+INSERT INTO Question VALUES (NULL, "In what modern-day country was Karl Marx, the communist philosopher, born?", NULL, "A. Russia", "B. France", "C. China", "D. Germany", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "Which of these was a philosopher during the Renaissance period?", NULL, "A. Karl Popper", "B. Erasmus", "C. Jean-Paul Sartre", "D. Charles Darwin", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "Which of these was not the first name of a Brontë sister?", NULL, "A. Anne", "B. Emily", "C. Charlotte", "D. Mary", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "What was American abolitionist Harriet Tubman’s original name?", NULL, "A. Harriet Jones", "B. Chloe Abernathy", "C. Anges Tubman", "D. Araminta Ross", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "What was Mother Teresa's real first name?", NULL, "A. Susan", "B. Cynthia", "C. Anges", "D. Araminta", "C", 0, 9);
+INSERT INTO Question VALUES (NULL, "What year was Keanu Reeves born in?", NULL, "A. 1959", "B. 1964", "C. 1974", "D. 1978", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "In what year did Saddam Hussein become President of Iraq?", NULL, "A. 1965", "B. 1969", "C. 1975", "D. 1979", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "In which month in 1997 was The Notorious B.I.G. gunned down?", NULL, "A. March", "B. April", "C. September", "D. June", "A", 0, 9);
+INSERT INTO Question VALUES (NULL, "Which golfer became only the fifth in history to win both the British and US Open championships in the same year?", NULL, "A. Arnold Palmer", "B. Jack Nicklaus", "C. Tiger Woods", "D. Tom Watson", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "Which First Lady had to give evidence over the Whitewater scandal?", NULL, "A. Nancy Reagan", "B. Barbara Bush", "C. Hillary Clinton", "D. Laura Bush", "C", 0, 9);
+INSERT INTO Question VALUES (NULL, "In which state were Bonnie & Clyde killed?", NULL, "A. Louisiana", "B. California", "C. Arkansas", "D. Arizona", "A", 0, 9);
+INSERT INTO Question VALUES (NULL, "What Biblical name did Boris Becker give to his son?", NULL, "A. Jonathon", "B. Noah", "C. David", "D. Jonah", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "Fitness trainer Carlos Leon was the father of which singer/actress's child?", NULL, "A. Bette Midler", "B. Jennifer Lopez", "C. Madonna", "D. Queen Latifah", "C", 0, 9);
+INSERT INTO Question VALUES (NULL, "This quintessential swing singer was known for her improvised scat solos, a technique invented by one of her frequent collaborators, Louis Armstrong?", NULL, "A. Anita O’Day", "B. Dinah Washington", "C. Ella Fitzgerald", "D. Sarah Vaughan", "C", 0, 9);
+INSERT INTO Question VALUES (NULL, "This “Queen of the Blues” won a Grammy for her rendition of the song “What a Diff’rence a Day Makes.”", NULL, "A. Rosemary Clooney", "B. Dinah Washington", "C. Lena Horne", "D. Aretha Franklin", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "Which of these famous currents did Benjamin Franklin map?", NULL, "A. Gulf Stream", "B. Humboldt Current", "C. North Atlantic Drift", "D. Labrador Current", "A", 0, 9);
+INSERT INTO Question VALUES (NULL, "Which movie star was a Junior Olympic Weightlifting Champion?", NULL, "A. Carl Wheathers", "B. Dolph Lundgren", "C. Sylvester Stallone", "D. Arnold Schwarzenegger", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "What year was Leonardo DiCaprio born in?", NULL, "A. 1972", "B. 1968", "C. 1974", "D. 1970", "C", 0, 9);
+INSERT INTO Question VALUES (NULL, "What is the correct spelling of the name of Peter Parker’s web-swinging alter ego?", NULL, "A. Spiderman", "B. Spider-Man", "C. Arachne", "D. Spider Man", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "What eminent scientist hosted the television show Cosmos?", NULL, "A. Jacob Bronowski", "B. Stephen Hawking", "C. Albert Einstein", "D. Carl Sagan", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "In which country was Sa?d Taghmaoui born?", NULL, "A. Algeria", "B. Morocco", "C. Tunisia", "D. France", "D", 0, 9);
+INSERT INTO Question VALUES (NULL, "In The Wizard of Oz, who played the Wicked Witch of the West?", NULL, "A. Judy Garland", "B. Margaret Hamilton", "C. Judi Dench", "D. Billy Barty", "B", 0, 9);
+INSERT INTO Question VALUES (NULL, "Who is the voice of Remy the Rat in Ratatouille?", NULL, "A. Will Geer", "B. Will Patton", "C. Brad Garrett", "D. Patton Oswalt", "D", 0, 9);
+
+
+
+
+
+
+
+
+
+
+
+
+
