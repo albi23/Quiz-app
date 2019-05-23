@@ -11,11 +11,12 @@ import android.view.View
 import android.widget.Button
 import com.example.quizapp.DBHelper.DBHelper
 import com.example.quizapp.DBModel.Question
+import com.example.quizapp.QuizAppActivity
 import com.example.quizapp.R
 import kotlinx.android.synthetic.main.activity_game.*
 import java.util.ArrayList
 
-class GameActivity : AppCompatActivity() {
+class GameActivity : QuizAppActivity() {
 
     private var roundNumber = 0
     private var currQuestionNumber = 0 //actually displayed question id

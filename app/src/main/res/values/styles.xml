@@ -3,9 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimaryOceanBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkOceanBlue</item>
     </style>
 
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -14,19 +13,33 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="OceanBlueTheme" parent="AppTheme.NoActionBar">
+        <item name="colorTheme">@color/colorPrimaryOceanBlue</item>
+        <item name="colorThemeDark">@color/colorPrimaryDarkOceanBlue</item>
+    </style>
+
+    <style name="SOTBTheme" parent="AppTheme.NoActionBar">
+        <item name="colorTheme">@color/colorPrimarySOB</item>
+        <item name="colorThemeDark">@color/colorPrimaryDarkSOB</item>
+    </style>
+
+    <style name="MiamiSunsetTheme" parent="AppTheme.NoActionBar">
+        <item name="colorTheme">@color/colorPrimarySunset</item>
+        <item name="colorThemeDark">@color/colorPrimaryDarkSunset</item>
+    </style>
+
+    <style name="RaspberryDaydreamTheme" parent="AppTheme.NoActionBar">
+        <item name="colorTheme">@color/colorPrimaryRaspberryDaydream</item>
+        <item name="colorThemeDark">@color/colorPrimaryDarkRaspberryDaydream</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:textColorPrimary">@color/colorAppDark</item>
     </style>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
-        <item name="buttonGradientStartColor">@color/colorPrimary</item>
-        <item name="buttonGradientEndColor">@color/colorAccent</item>
-    </style>
 
-    <style name="AppTheme.ResultProgressBar" parent="Widget.MaterialProgressBar.ProgressBar">
-        <item name="android:progressBackgroundTint">@color/correctAnswerColor</item>
-        <item name="android:secondaryProgressTint">@color/wrongAnswerColor</item>
-        <item name="android:background">@drawable/result_progress</item>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ButtonTheme" parent="Widget.AppCompat.Button">
     </style>
     <!--Turn on full screen in app without title bar -->
 

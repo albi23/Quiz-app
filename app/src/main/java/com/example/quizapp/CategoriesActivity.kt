@@ -13,7 +13,7 @@ import com.example.quizapp.Game.ResultActivity
 import kotlinx.android.synthetic.main.activity_categories.*
 import kotlinx.android.synthetic.main.content_categories.*
 
-class CategoriesActivity : AppCompatActivity() {
+class CategoriesActivity : QuizAppActivity() {
 
     private val START_GAME = 1
     private var chooseCategoryID: Int = 0

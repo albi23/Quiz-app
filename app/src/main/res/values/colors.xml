@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#03A9F4</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#03A9F4</color>
+    <color name="colorPrimaryOceanBlue">#03A9F4</color>
+    <color name="colorPrimaryDarkOceanBlue">#303F9F</color>
+
+    <color name="colorPrimarySunset">#EF6C00</color>
+    <color name="colorPrimaryDarkSunset">#4527A0</color>
+
+    <color name="colorPrimarySOB">#D84315</color>
+    <color name="colorPrimaryDarkSOB">#F9D625</color>
+
+    <color name="colorPrimaryRaspberryDaydream">#AD1457</color>
+    <color name="colorPrimaryDarkRaspberryDaydream">#1565C0</color>
 
     <color name="colorProgress">#FFF176</color>
     <color name="colorProgressDark">#FDD835</color>

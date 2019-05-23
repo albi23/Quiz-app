@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
+import com.example.quizapp.QuizAppActivity
 import com.example.quizapp.R
 import com.example.quizapp.Stats.StatisticPreferences
 import com.facebook.share.model.ShareLinkContent
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_categories.toolbar
 import kotlinx.android.synthetic.main.activity_result.*
 
 
-class ResultActivity : AppCompatActivity() {
+class ResultActivity : QuizAppActivity() {
 
 
     private val cups = arrayOf("cup_bronze", "cup_silver", "cup_gold")

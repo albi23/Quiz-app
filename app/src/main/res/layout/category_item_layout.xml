@@ -5,11 +5,11 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:gravity="center"
-              android:background="@drawable/blue_block"
+              android:background="@drawable/theme_block"
               android:layout_marginRight="5dp"
               android:layout_marginLeft="5dp"
               android:layout_marginTop="2.5dp"
-              android:layout_marginBottom="2.5dp">
+              android:layout_marginBottom="2.5dp" android:padding="4dp">
     <ImageView
             android:layout_width="300dp"
             android:layout_height="100dp"
@@ -36,5 +36,5 @@
             android:layout_weight="1"
             android:textSize="36sp"
             android:textColor="@color/colorAppDark"
-            android:textAllCaps="true"/>
+            android:textAllCaps="true" android:gravity="center"/>
 </LinearLayout>
