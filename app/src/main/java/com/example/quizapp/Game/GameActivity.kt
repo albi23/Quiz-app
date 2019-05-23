@@ -2,13 +2,13 @@ package com.example.quizapp.Game
 
 import android.content.Intent
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
 import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import com.example.quizapp.DBHelper.DBHelper
 import com.example.quizapp.DBModel.Question
 import com.example.quizapp.R
@@ -19,13 +19,14 @@ class GameActivity : AppCompatActivity() {
 
     private var roundNumber = 0
     private var currQuestionNumber = 0 //actually displayed question id
-    private var usedQuestionNumbers = arrayListOf<Int>() //stores question number from previous rounds to prevent repetitions of questions
-    private var  questionList : MutableList<Question>  = ArrayList<Question>()
+    private var usedQuestionNumbers =
+        arrayListOf<Int>() //stores question number from previous rounds to prevent repetitions of questions
+    private var questionList: MutableList<Question> = ArrayList<Question>()
     private var areButtonsLocked = false
-    private lateinit var  baseBtnBlock: Drawable //button color before repainting
+    private lateinit var baseBtnBlock: Drawable //button color before repainting
     private lateinit var timer: CountDownTimer
     private val timeToAnswer = 30000L
-    private val timerRefreshFrequency  = 40L
+    private val timerRefreshFrequency = 40L
     private val interval = 1000L //one animation time interval in milliseconds
     private var counterCorrectAnswer = 0
 
@@ -34,13 +35,10 @@ class GameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
         /** Get from intent chosen category*/
-        var idCategory = intent.getIntExtra("idCategory",1)
+        var idCategory = intent.getIntExtra("idCategory", 1)
         val databaseRequest = DBHelper(this)
-        if(idCategory !in (1..5)){
-            Toast.makeText(this, "Mamy tylko 5 kategorie póki co ",Toast.LENGTH_SHORT).show()
-            idCategory =1
-        }
-        questionList  = databaseRequest.getQuestionBycategory(idCategory)
+
+        questionList = databaseRequest.getQuestionBycategory(idCategory)
 
         baseBtnBlock = answer_btn_a.background
 
@@ -50,42 +48,43 @@ class GameActivity : AppCompatActivity() {
         timer.start()
     }
 
-    fun onAnswerChoose(v: View){
-        if(areButtonsLocked) return
+    fun onAnswerChoose(v: View) {
+        if (areButtonsLocked) return
 
         areButtonsLocked = true //lock all buttons till the next round
         timer.cancel() //stop the timer
 
         val clickedBtn = (v as Button)
         val correctAnswer = questionList[currQuestionNumber].correctAnswer.toString()
-        val chosenAnswer = clickedBtn.text.toString().substring(0,1)
+        val chosenAnswer = clickedBtn.text.toString().substring(0, 1)
 
-        var incorrectBlock = getDrawable(R.drawable.wrong_answer_block) //color for clicked button and answer history btn
+        var incorrectBlock =
+            getDrawable(R.drawable.wrong_answer_block) //color for clicked button and answer history btn
         val correctBlock = getDrawable(R.drawable.correct_answer_block)
 
-        if(chosenAnswer.compareTo(correctAnswer) == 0){
+        if (chosenAnswer.compareTo(correctAnswer) == 0) {
             counterCorrectAnswer++
             incorrectBlock = correctBlock
             moveToNextQuestionAfterDelay(3 * interval)
             setAnswerHistoryColor(incorrectBlock)
 
-        }else {
+        } else {
             handleIncorrectAnswer()
         }
 
         clickedBtn.background = incorrectBlock
     }
 
-    private fun handleIncorrectAnswer(){
+    private fun handleIncorrectAnswer() {
         val correctAnswer = questionList[currQuestionNumber].correctAnswer.toString()
         val correctAnswerBlock = getDrawable(R.drawable.correct_answer_block)
         val incorrectAnswerBlock = getDrawable(R.drawable.wrong_answer_block)
 
         var correctAnswerBtn = answer_btn_a
         when (correctAnswer) {
-            answer_btn_b.text.toString().substring(0,1) -> correctAnswerBtn = answer_btn_b
-            answer_btn_c.text.toString().substring(0,1) -> correctAnswerBtn = answer_btn_c
-            answer_btn_d.text.toString().substring(0,1) -> correctAnswerBtn = answer_btn_d
+            answer_btn_b.text.toString().substring(0, 1) -> correctAnswerBtn = answer_btn_b
+            answer_btn_c.text.toString().substring(0, 1) -> correctAnswerBtn = answer_btn_c
+            answer_btn_d.text.toString().substring(0, 1) -> correctAnswerBtn = answer_btn_d
         }
 
         setAnswerHistoryColor(incorrectAnswerBlock)
@@ -100,7 +99,7 @@ class GameActivity : AppCompatActivity() {
         moveToNextQuestionAfterDelay(6 * interval)
     }
 
-    private fun moveToNextQuestionAfterDelay(delayTime: Long){
+    private fun moveToNextQuestionAfterDelay(delayTime: Long) {
         Handler().postDelayed({
             nextQuestion()
             timer.start()
@@ -108,8 +107,8 @@ class GameActivity : AppCompatActivity() {
         }, delayTime)
     }
 
-    private fun setAnswerHistoryColor(color: Drawable?){
-        when (roundNumber){
+    private fun setAnswerHistoryColor(color: Drawable?) {
+        when (roundNumber) {
             1 -> first_question_result_btn.background = color
             2 -> second_question_result_btn.background = color
             3 -> third_question_result_btn.background = color
@@ -118,9 +117,9 @@ class GameActivity : AppCompatActivity() {
         }
     }
 
-    private fun nextQuestion(){
-        if(roundNumber == 5){ ///popraw to !
-            showResults()
+    private fun nextQuestion() {
+        if (roundNumber == 5) {
+            getBackResult()
         }
 
         //color answer buttons in default color
@@ -134,7 +133,7 @@ class GameActivity : AppCompatActivity() {
 
         //generate question number till it is not repeated
         var randomQuestionNumber = (0 until questionList.size - 1).random()
-        while(usedQuestionNumbers.contains(randomQuestionNumber)){
+        while (usedQuestionNumbers.contains(randomQuestionNumber)) {
             randomQuestionNumber = (0 until questionList.size - 1).random()
         }
 //
@@ -147,8 +146,8 @@ class GameActivity : AppCompatActivity() {
         answer_btn_b.text = questionList[currQuestionNumber].answerB
         answer_btn_c.text = questionList[currQuestionNumber].answerC
         answer_btn_d.text = questionList[currQuestionNumber].answerD
-    }
 
+    }
 
 
     //question time progress bar controller
@@ -166,19 +165,16 @@ class GameActivity : AppCompatActivity() {
         }
     }
 
-    private fun getStringByName(resourceName : String): String{
+    private fun getStringByName(resourceName: String): String {
         return resources.getString(resources.getIdentifier(resourceName, "string", packageName))
     }
 
-    private fun showResults(){
+    /** Function which returned the result of correct answers to categories activities*/
+    private fun getBackResult() {
 
-        val newIntent =  Intent(this, ResultActivity::class.java)
-        newIntent.putExtra("correctAnswer",counterCorrectAnswer)
-        newIntent.putExtra("nameCategory",intent.getStringExtra("nameCategory"))
-        newIntent.putExtra("idCategory",intent.getIntExtra("idCategory",1))
-
-        startActivity(newIntent)
-        finish()
+        val data = Intent().setData(Uri.parse(counterCorrectAnswer.toString()))
+        setResult(RESULT_OK, data)
+        this.finish()
 
     }
 }

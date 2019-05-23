@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
 
+
     private val cups = arrayOf("cup_bronze", "cup_silver", "cup_gold")
     private val finalTexts = arrayOf("Try Harder", "Not Bad", "You Did Well")
     private val ANSWERS : Int = 5
