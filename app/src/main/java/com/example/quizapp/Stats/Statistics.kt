@@ -87,9 +87,9 @@ class Statistics : QuizAppActivity() {
             pieChartData.setHasLabels(true).valueLabelTextSize = 14
             pieChartData.setHasCenterCircle(true).centerText1 = arrayCategories[i].name
             pieChartData.isValueLabelBackgroundEnabled = true
+            pieChartData.slicesSpacing = 3
 
             chartData.add(pieChartData)
-
         }
 
         return chartData
@@ -97,7 +97,7 @@ class Statistics : QuizAppActivity() {
     }
 
 
-    fun onClickBack(view: View){ // jeszcze nie wiem jak ma to wyglądać
+    fun onClickBack(view: View){
         finish()
     }
 }

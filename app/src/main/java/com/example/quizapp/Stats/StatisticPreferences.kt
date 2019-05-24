@@ -40,7 +40,7 @@ class StatisticPreferences(context: Context) {
 
     fun resetData(fromIdCategory: Int, toIdCategory: Int):Boolean {
 
-        if (fromIdCategory > 0 && toIdCategory <= CURRENT_NUMBER_CATEGORIES) {
+        if (fromIdCategory > 0 && toIdCategory <= CURRENT_NUMBER_CATEGORIES && toIdCategory >= fromIdCategory) {
 
             for (id in fromIdCategory..toIdCategory) {
                 setCorrect(0, id)

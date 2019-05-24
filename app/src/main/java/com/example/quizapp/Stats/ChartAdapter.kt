@@ -24,7 +24,23 @@ class ChartAdapter(private val data : List<PieChartData>) :
 
     override fun onBindViewHolder(holder: ChartViewHolder, position: Int) {
         /* Get view and set them parameters*/
+
+        //Remember old values
+        val firstValue = data[position].values[0].value
+        val secondValue = data[position].values[1].value
+
+        //Change only for watch animation
+        data[position].values[0].value = 1f
+        data[position].values[1].value = 1f
+
+        //restore correct value
         holder.itemView.chart.pieChartData = data[position]
+        data[position].values[0].setTarget(firstValue)
+        data[position].values[1].setTarget(secondValue)
+
+        holder.itemView.chart.startDataAnimation(3000)
+
+
     }
 
 }
