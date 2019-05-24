@@ -4,11 +4,15 @@ import android.os.Bundle
 import android.support.annotation.ColorInt
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import com.example.quizapp.DBHelper.DBHelper
 import com.example.quizapp.QuizAppActivity
 import com.example.quizapp.R
 import kotlinx.android.synthetic.main.activity_categories.*
+import kotlinx.android.synthetic.main.chart_item.*
 import kotlinx.android.synthetic.main.content_chart.*
 import lecho.lib.hellocharts.model.PieChartData
 import lecho.lib.hellocharts.model.SliceValue
@@ -27,8 +31,26 @@ class Statistics : QuizAppActivity() {
         chartRecyclerView.adapter = ChartAdapter(getDataToGraph())
     }
 
+    /**Setting menu in window*/
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_statistic, menu)
+        return true
+    }
 
-    private fun getDataToGraph():ArrayList<PieChartData>{
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        if  (item.itemId == R.id.action_settings) {
+            val pref =  StatisticPreferences(this)
+            if (pref.resetData(1,9)) {
+                Toast.makeText(this,"Statistic has been cleared",Toast.LENGTH_SHORT).show()
+                recreate()
+            }
+        }
+
+        return false
+    }
+
+        private fun getDataToGraph():ArrayList<PieChartData>{
 
         val chartData = ArrayList<PieChartData>()
         val arrayCategories = DBHelper.getInstance(this).allCategories

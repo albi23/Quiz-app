@@ -7,9 +7,10 @@
     <string name="polish">Polish</string>
     <string name="play">Tap to play</string>
     <string name="statistics">Statistics</string>
+    <string name="settings">Settings</string>
     <string name="language">Language</string>
     <string name="title_activity_categories">PICK UP A CATEGORY</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_reset">Reset Statistic</string>
 
     <string name="result_title">Result of the game</string>
 
