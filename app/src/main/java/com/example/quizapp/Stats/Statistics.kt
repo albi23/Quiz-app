@@ -16,11 +16,16 @@ import kotlinx.android.synthetic.main.chart_item.*
 import kotlinx.android.synthetic.main.content_chart.*
 import lecho.lib.hellocharts.model.PieChartData
 import lecho.lib.hellocharts.model.SliceValue
+import android.content.DialogInterface
+import android.support.v7.app.AlertDialog
+
 
 class Statistics : QuizAppActivity() {
 
-    @ColorInt val winColor = 0xFF43A047
-    @ColorInt val loseColor = 0xFFC5032B
+    @ColorInt
+    val winColor = 0xFF43A047
+    @ColorInt
+    val loseColor = 0xFFC5032B
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,47 +44,61 @@ class Statistics : QuizAppActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-        if  (item.itemId == R.id.action_settings) {
-            val pref =  StatisticPreferences(this)
-            if (pref.resetData(1,9)) {
-                Toast.makeText(this,"Statistic has been cleared",Toast.LENGTH_SHORT).show()
-                recreate()
-            }
+        if (item.itemId == R.id.action_settings) {
+            showResetAlert()
         }
 
         return false
     }
 
-        private fun getDataToGraph():ArrayList<PieChartData>{
+    /**Function showing an alert before reseting the statistics*/
+    fun showResetAlert() {
+
+        AlertDialog.Builder(this)
+            .setTitle("Reset the statistics")
+            .setMessage("Are you sure that you want to clear the statistics?")
+            .setPositiveButton(android.R.string.yes) { _: DialogInterface, _ : Int ->
+
+                val pref = StatisticPreferences(this)
+                if (pref.resetData(1, 9)) {
+                    Toast.makeText(this, "Statistic has been cleared", Toast.LENGTH_SHORT).show()
+                    recreate()
+                }
+            }
+            .setNegativeButton(android.R.string.no, null)
+            .setIcon(android.R.drawable.ic_dialog_alert)
+            .show()
+    }
+
+    private fun getDataToGraph(): ArrayList<PieChartData> {
 
         val chartData = ArrayList<PieChartData>()
         val arrayCategories = DBHelper.getInstance(this).allCategories
         val pref = StatisticPreferences(this)
-        var pieChartData : PieChartData
-        var correct : Int
-        var wrong : Int
+        var pieChartData: PieChartData
+        var correct: Int
+        var wrong: Int
 
 
-        for ( i in 0 until arrayCategories.size) {
+        for (i in 0 until arrayCategories.size) {
 
             correct = pref.getCorrect(arrayCategories[i].id)
             wrong = pref.getWrong(arrayCategories[i].id)
 
 
-             pieChartData = PieChartData(
+            pieChartData = PieChartData(
                 arrayListOf(
-           SliceValue().
-                setLabel("Wrong $wrong")
-                .setColor(loseColor.toInt())
-                .setValue(wrong.toFloat()),
+                    SliceValue().setLabel("Wrong $wrong")
+                        .setColor(loseColor.toInt())
+                        .setValue(wrong.toFloat()),
 
-           SliceValue().
-                setLabel("Correct $correct")
-                .setColor(winColor.toInt())
-                .setValue(correct.toFloat())
-            ))
+                    SliceValue().setLabel("Correct $correct")
+                        .setColor(winColor.toInt())
+                        .setValue(correct.toFloat())
+                )
+            )
 
-            if(correct+wrong == 0 ){
+            if (correct + wrong == 0) {
                 pieChartData.values[0].value = 50f
                 pieChartData.values[1].value = 50f
             }
@@ -97,7 +116,7 @@ class Statistics : QuizAppActivity() {
     }
 
 
-    fun onClickBack(view: View){
+    fun onClickBack(view: View) {
         finish()
     }
 }
