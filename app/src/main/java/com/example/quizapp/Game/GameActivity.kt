@@ -121,6 +121,7 @@ class GameActivity : QuizAppActivity() {
     private fun nextQuestion() {
         if (roundNumber == 5) {
             getBackResult()
+	  return
         }
 
         //color answer buttons in default color
