@@ -65,6 +65,9 @@ class ResultActivity : QuizAppActivity() {
         if (ANSWERS - correctAnswer != 0) preferences.setWrong(preferences.getWrong(idCategory) + (ANSWERS - correctAnswer),idCategory)
     }
 
+    fun finishOnClick(view: View) {
+        onFinish()
+    }
 
     private fun onFinish(){
         finish()

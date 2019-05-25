@@ -27,7 +27,8 @@
             android:background="@drawable/yellow_block"
             android:minHeight="80sp"
             android:textColor="@color/colorAppDark" android:layout_weight="2" android:layout_margin="5dp"
-            android:text="Test" android:textAllCaps="true" android:textAlignment="gravity" android:gravity="center"/>
+            android:text="Test" android:textAllCaps="true" android:textAlignment="gravity" android:gravity="center"
+            android:onClick="finishOnClick"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -37,7 +38,8 @@
             android:textSize="50sp"
             android:layout_marginTop="5dp"
             android:text="You Did Well"
-            android:textColor="#4CAF50" android:layout_weight="3" android:textAllCaps="true"/>
+            android:textColor="#4CAF50" android:layout_weight="3" android:textAllCaps="true"
+            android:onClick="finishOnClick"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -46,11 +48,12 @@
             android:layout_marginTop="10dp"
             app:srcCompat="@drawable/cup_silver"
             android:id="@+id/image_result"
-            android:scaleType="fitCenter" android:layout_weight="10"/>
+            android:scaleType="fitCenter" android:layout_weight="10" android:onClick="finishOnClick"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_weight="2">
+            android:layout_height="0dp" android:layout_weight="2"
+            android:onClick="finishOnClick">
 
         <TextView
                 android:text="Correct "
@@ -77,7 +80,8 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_weight="2">
+            android:layout_height="0dp" android:layout_weight="2"
+            android:onClick="finishOnClick">
 
         <TextView
                 android:text="3 "
@@ -107,11 +111,12 @@
             android:max="5"
             android:progress="3"
             android:secondaryProgress="5"
-            android:progressDrawable="@drawable/result_progress" android:layout_weight="1"/>
+            android:progressDrawable="@drawable/result_progress" android:layout_weight="1"
+            android:onClick="finishOnClick"/>
 
     <Space
             android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_weight="1"/>
+            android:layout_height="0dp" android:layout_weight="1" android:onClick="finishOnClick"/>
     <Button
             android:layout_gravity="bottom"
             android:background="@drawable/share_button_background"

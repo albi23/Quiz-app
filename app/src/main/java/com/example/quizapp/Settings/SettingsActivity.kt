@@ -1,13 +1,13 @@
 package com.example.quizapp.Settings
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.Switch
 import com.example.quizapp.QuizAppActivity
 import com.example.quizapp.R
-import kotlinx.android.synthetic.main.activity_categories.*
+import com.example.quizapp.SoundService
+import kotlinx.android.synthetic.main.activity_categories.toolbar
+import kotlinx.android.synthetic.main.activity_settings.*
 
 class SettingsActivity : QuizAppActivity() {
 
@@ -20,6 +20,8 @@ class SettingsActivity : QuizAppActivity() {
         supportActionBar!!.title = "Settings"
 
         toolbar.setNavigationOnClickListener { finish() }
+
+        soundSwitch.isChecked = SettingsPreferences(this).getSoundPreferences()
     }
 
     fun setOceanBlueTheme(view : View) {
@@ -38,13 +40,19 @@ class SettingsActivity : QuizAppActivity() {
         setAppTheme(R.style.RaspberryDaydreamTheme)
     }
 
-    fun setSound(switch : View) {
+    fun setSound(view : View) {
+        val set = SettingsPreferences(this)
+        set.setSoundPreferences(soundSwitch.isChecked)
 
+        if (soundSwitch.isChecked) {
+            startService(Intent(this, SoundService::class.java))
+        } else {
+            stopService(Intent(this, SoundService::class.java))
+        }
     }
 
     private fun setAppTheme(theme : Int) {
         val prefs = SettingsPreferences(this)
-        Log.d("theme", "setApptheme: "+theme)
         prefs.setTheme(theme)
         recreate()
     }
